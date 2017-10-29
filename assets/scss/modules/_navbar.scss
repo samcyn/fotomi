@@ -1,0 +1,50 @@
+.navbar.navbar-light .navbar-nav .nav-item.active >.nav-link {
+    background-color: transparent;
+}
+// NAV BAR 1rem == 16px;
+
+.navbar{
+	border-radius: 0;
+	box-shadow: none !important;
+	margin-bottom: 0 !important;
+	padding: 0 1rem;
+
+	.navbar-brand{
+		-webkit-align-self: center !important;
+		-ms-flex-item-align: center !important;
+		align-self: center !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		@media(max-width: 991px){
+			padding-top: 5px !important;
+			padding-bottom: 5px !important;
+		}
+		img{
+			max-height: $navbar_logo_height !important;
+			@media(max-width: 991px){
+				height: 40px;
+			}
+		}
+	}
+
+	.nav-link{
+		color: $navlink_color !important; 
+		font-size: $navlink_fontSize;
+		line-height: $navbar_lineHeight !important;
+		padding: $navlink_paddingTB $navlink_paddingLR !important;
+	}
+
+
+	.nav-item{
+		position: relative;
+		&:last-child{
+			.nav-link{
+				padding-right: 0 !important;
+			}
+		}
+	}
+
+}
+
+
+

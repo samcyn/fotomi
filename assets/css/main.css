@@ -1,0 +1,61 @@
+/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  background-color: transparent;
+}
+
+/* line 6, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
+.navbar {
+  border-radius: 0;
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
+  padding: 0 1rem;
+}
+
+/* line 12, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
+.navbar .navbar-brand {
+  -webkit-align-self: center !important;
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+@media (max-width: 991px) {
+  /* line 12, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
+  .navbar .navbar-brand {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+}
+
+/* line 22, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
+.navbar .navbar-brand img {
+  max-height: 40px !important;
+}
+
+@media (max-width: 991px) {
+  /* line 22, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
+  .navbar .navbar-brand img {
+    height: 40px;
+  }
+}
+
+/* line 30, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
+.navbar .nav-link {
+  color: #444 !important;
+  font-size: 12px;
+  line-height: 14px !important;
+  padding: 24px 24px !important;
+}
+
+/* line 38, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
+.navbar .nav-item {
+  position: relative;
+}
+
+/* line 41, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
+.navbar .nav-item:last-child .nav-link {
+  padding-right: 0 !important;
+}
+
+/*# sourceMappingURL=../css/main.map */
