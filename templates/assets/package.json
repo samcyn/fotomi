@@ -1,0 +1,29 @@
+{
+  "name": "fotomi",
+  "version": "1.0.0",
+  "description": "connecting photographers with their customers even more",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samcyn/fotomi.git"
+  },
+  "keywords": [
+    "photography",
+    "shots",
+    "money",
+    "subscription"
+  ],
+  "author": "univelcity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samcyn/fotomi/issues"
+  },
+  "homepage": "https://github.com/samcyn/fotomi#readme",
+  "dependencies": {
+    "custombox": "^4.0.3",
+    "mdbootstrap": "^4.4.1"
+  }
+}

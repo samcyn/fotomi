@@ -1,0 +1,34 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/base/_variables.scss",
+		"../scss/base/_mixins.scss",
+		"../scss/base/_reset.scss",
+		"../scss/base/_base.scss",
+		"../scss/modules/_typography.scss",
+		"../scss/layout/_header.scss",
+		"../scss/modules/_navbar.scss",
+		"../scss/layout/_main.scss",
+		"../scss/layout/_footer.scss",
+		"../scss/components/_buttons.scss",
+		"../scss/components/_cards.scss"
+	],
+	"sourcesContent": [
+		"@import 'base/_variables.scss';\n@import 'base/_mixins.scss';\n@import 'base/_reset.scss';\n@import 'base/_base.scss';\n\n@import 'modules/_typography.scss';\n\n@import 'layout/_header.scss';\n@import 'layout/_main.scss';\n@import 'layout/_footer.scss';\n\n\n\n@import 'components/_buttons.scss';\n@import 'components/_cards.scss';\n",
+		"// NAVBAR \n$navlink_color: #444;\n$navbar_lineHeight: 14px;\n$navlink_fontSize: 12px;\n$navlink_paddingTB: 24px; //2.625rem;\n$navlink_paddingLR: 24px;\n$navlink_bottomLineHeight: 3px;\n$navbar_logo_height: 40px;",
+		"",
+		"",
+		"",
+		"// @include font-face('BryantLight', '../fonts/Bryant/BryantLight', 100, normal, ttf);\n// @include font-face('BryantLightAlt', '../fonts/Bryant/BryantLightAlt', 200, normal, ttf);\n// @include font-face('BryantRegular', '../fonts/Bryant/BryantRegular', 300, normal, ttf);\n// @include font-face('BryantRegularAlt', '../fonts/Bryant/BryantRegularAlt', 400, normal, ttf);\n// @include font-face('BryantMedium', '../fonts/Bryant/BryantMedium', 500, normal, ttf);\n// @include font-face('BryantMediumAlt', '../fonts/Bryant/BryantMediumAlt', 600, normal, ttf);\n// @include font-face('BryantBoldAlt', '../fonts/Bryant/BryantBoldAlt', 700, normal, ttf);",
+		"@import '../modules/_navbar.scss';\n",
+		".navbar.navbar-light .navbar-nav .nav-item.active >.nav-link {\n    background-color: transparent;\n}\n// NAV BAR 1rem == 16px;\n\n.navbar{\n\tborder-radius: 0;\n\tbox-shadow: none !important;\n\tmargin-bottom: 0 !important;\n\tpadding: 0 1rem;\n\n\t.navbar-brand{\n\t\t-webkit-align-self: center !important;\n\t\t-ms-flex-item-align: center !important;\n\t\talign-self: center !important;\n\t\tpadding-top: 0 !important;\n\t\tpadding-bottom: 0 !important;\n\t\t@media(max-width: 991px){\n\t\t\tpadding-top: 5px !important;\n\t\t\tpadding-bottom: 5px !important;\n\t\t}\n\t\timg{\n\t\t\tmax-height: $navbar_logo_height !important;\n\t\t\t@media(max-width: 991px){\n\t\t\t\theight: 40px;\n\t\t\t}\n\t\t}\n\t}\n\n\t.nav-link{\n\t\tcolor: $navlink_color !important; \n\t\tfont-size: $navlink_fontSize;\n\t\tline-height: $navbar_lineHeight !important;\n\t\tpadding: $navlink_paddingTB $navlink_paddingLR !important;\n\t}\n\n\n\t.nav-item{\n\t\tposition: relative;\n\t\t&:last-child{\n\t\t\t.nav-link{\n\t\t\t\tpadding-right: 0 !important;\n\t\t\t}\n\t\t}\n\t}\n\n}\n\n\n\n",
+		"\n\n\n\n\n\n",
+		"",
+		"",
+		""
+	],
+	"mappings": ";AOAA,AAAmD,OAA5C,AAAA,aAAa,CAAC,WAAW,CAAC,SAAS,AAAA,OAAO,GAAE,SAAS,CAAC;EACzD,gBAAgB,EAAE,WAAY;CACjC;;;AAGD,AAAA,OAAO,CAAA;EACN,aAAa,EAAE,CAAE;EACjB,UAAU,EAAE,eAAgB;EAC5B,aAAa,EAAE,YAAa;EAC5B,OAAO,EAAE,MAAO;CAqChB;;;AAzCD,AAMC,OANM,CAMN,aAAa,CAAA;EACZ,kBAAkB,EAAE,iBAAkB;EACtC,mBAAmB,EAAE,iBAAkB;EACvC,UAAU,EAAE,iBAAkB;EAC9B,WAAW,EAAE,YAAa;EAC1B,cAAc,EAAE,YAAa;CAW7B;;AAVA,MAAM,EAAL,SAAS,EAAE,KAAK;;EAZnB,AAMC,OANM,CAMN,aAAa,CAAA;IAOX,WAAW,EAAE,cAAe;IAC5B,cAAc,EAAE,cAAe;GAQhC;;;;AAtBF,AAgBE,OAhBK,CAMN,aAAa,CAUZ,GAAG,CAAA;EACF,UAAU,ENfQ,IAAI,CMeU,UAAU;CAI1C;;AAHA,MAAM,EAAL,SAAS,EAAE,KAAK;;EAlBpB,AAgBE,OAhBK,CAMN,aAAa,CAUZ,GAAG,CAAA;IAGD,MAAM,EAAE,IAAK;GAEd;;;;AArBH,AAwBC,OAxBM,CAwBN,SAAS,CAAA;EACR,KAAK,EN7BS,IAAI,CM6BI,UAAU;EAChC,SAAS,EN5BQ,IAAI;EM6BrB,WAAW,EN9BO,IAAI,CM8BU,UAAU;EAC1C,OAAO,EN7BW,IAAI,CACJ,IAAI,CM4ByB,UAAU;CACzD;;;AA7BF,AAgCC,OAhCM,CAgCN,SAAS,CAAA;EACR,QAAQ,EAAE,QAAS;CAMnB;;;AAvCF,AAmCG,OAnCI,CAgCN,SAAS,AAEP,WAAW,CACX,SAAS,CAAA;EACR,aAAa,EAAE,YAAa;CAC5B",
+	"names": []
+}
