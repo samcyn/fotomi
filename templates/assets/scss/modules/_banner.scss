@@ -1,0 +1,22 @@
+.banner{
+    align-items: center;
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    .banner__small-heading{
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .banner__big-heading{
+        font-size: 27px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
+    .banner__buttons-group{
+        .btn{
+            width: 175px;
+        }
+    }
+}

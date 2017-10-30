@@ -1,3 +1,8 @@
+/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+.none-list-style-type {
+  list-style-type: none;
+}
+
 /* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
   background-color: transparent;
@@ -56,6 +61,158 @@
 /* line 41, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
 .navbar .nav-item:last-child .nav-link {
   padding-right: 0 !important;
+}
+
+/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_banner.scss */
+.banner {
+  align-items: center;
+  display: flex;
+  height: 450px;
+  justify-content: center;
+}
+
+/* line 6, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_banner.scss */
+.banner .banner__small-heading {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+/* line 11, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_banner.scss */
+.banner .banner__big-heading {
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+/* line 18, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_banner.scss */
+.banner .banner__buttons-group .btn {
+  width: 175px;
+}
+
+/* line 2, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .container--features {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 6, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__heading {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* line 10, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__col {
+  position: relative;
+  height: 200px;
+  /**height of image */
+  margin-bottom: 50px;
+}
+
+/* line 16, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__card {
+  max-width: 65%;
+  width: 100%;
+}
+
+/* line 21, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__graphics {
+  position: absolute;
+  max-width: 35%;
+  width: 100%;
+}
+
+/* line 26, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__graphics.feature__graphics--left {
+  left: 0;
+}
+
+/* line 29, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__graphics.feature__graphics--right {
+  right: 0;
+}
+
+/* line 33, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__watermark {
+  color: #CDCDCD;
+  font-size: 60px;
+  font-weight: 900;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 0;
+}
+
+/* line 40, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__watermark.feature__watermark--left {
+  right: -36px;
+}
+
+/* line 43, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__watermark.feature__watermark--right {
+  left: -16px;
+}
+
+/* line 48, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__balloons-container {
+  height: 200px;
+  width: 200px;
+}
+
+/* line 51, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__balloons-container.feature__balloons-container--left {
+  margin-right: auto;
+}
+
+/* line 54, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__balloons-container.feature__balloons-container--right {
+  margin-left: auto;
+}
+
+/* line 58, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
+.features .feature__balloons {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+.footer {
+  padding: 15px 0;
+}
+
+/* line 4, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+.footer__list {
+  padding: 15px 10px !important;
+  border: 1px solid #DDD;
+  border-radius: 5px;
+}
+
+/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_buttons.scss */
+.btn-brand {
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  font-weight: 400;
+  line-height: 15px;
+  padding: 12px 22px;
+}
+
+/* line 10, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_buttons.scss */
+.btn-brand--danger {
+  background: #FF5A5F;
+  color: #FFF;
+}
+
+/* line 14, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_buttons.scss */
+.btn-brand--primary {
+  background: #6EC0D4;
+  color: #FFF;
+}
+
+/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_cards.scss */
+.card {
+  border-radius: 0 !important;
 }
 
 /*# sourceMappingURL=../css/main.map */
