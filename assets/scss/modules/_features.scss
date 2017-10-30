@@ -1,0 +1,65 @@
+.features{
+    .container--features{
+        width: 75%;
+        margin: 0 auto;
+    }
+    .feature__heading{
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .feature__col{
+        position: relative;
+        height: 200px; /**height of image */
+        margin-bottom: 50px;
+    }
+
+    .feature__card{
+        max-width: 65%;
+        width: 100%;
+    }
+
+    .feature__graphics{
+        position: absolute;
+        max-width: 35%;
+        width: 100%;
+
+        &.feature__graphics--left{
+            left: 0;
+        }
+        &.feature__graphics--right{
+            right: 0;
+        }
+    }
+    .feature__watermark{
+        color: #CDCDCD;
+        font-size: 60px;
+        font-weight: 900;
+        opacity: 0.4;
+        position: absolute;
+        bottom: 0;
+        &.feature__watermark--left{
+            right: -36px;
+        }
+        &.feature__watermark--right{
+            left: -16px;
+        }
+    }
+
+    .feature__balloons-container{
+        height: 200px;
+        width: 200px;
+        &.feature__balloons-container--left{
+            margin-right: auto;
+        }
+        &.feature__balloons-container--right{
+            margin-left: auto;
+        }
+    }
+    .feature__balloons{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    
+}
