@@ -1,8 +1,17 @@
+//COLOR
+$brand_color_red: #FF5A5F;
+$brand_color_blue: #6EC0D4;
+
 // NAVBAR 
-$navlink_color: #444;
+$navlink_color_red: $brand_color_red;
+$navlink_color_blue: $brand_color_blue;
 $navbar_lineHeight: 14px;
 $navlink_fontSize: 12px;
 $navlink_paddingTB: 24px; //2.625rem;
 $navlink_paddingLR: 24px;
 $navlink_bottomLineHeight: 3px;
-$navbar_logo_height: 40px;
+$navbar_logo_height: 80px;
+
+
+//BRAND FORMS
+$form_background: $brand_color_blue;

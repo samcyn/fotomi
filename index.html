@@ -4,7 +4,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Fotomi</title>
+        <title>Fotomi</title>
+        
+        <!-- Custom Modal -->
+        <link rel="stylesheet" href="assets/node_modules/custombox/dist/custombox.min.css">
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="assets/node_modules/mdbootstrap/css/bootstrap.min.css">
@@ -39,10 +42,10 @@
                         <div class="collapse navbar-collapse">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link waves-effect waves-light" href="immersive_courses.html">Sign up <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link nav-link__red waves-effect waves-light" href="#">Sign up <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link waves-effect waves-light" href="accelerated.html">Login </a>
+                                    <a class="nav-link nav-link__blue waves-effect waves-light" href="#">Login </a>
                                 </li>
                             </ul>
                         </div>
@@ -54,8 +57,8 @@
                         <h4 class="banner__small-heading">Welcome to <span class="c-red">fotomi</span></h4>
                         <h2 class="banner__big-heading">A uniquely better ways to get your pictures</h2>
                         <div class="banner__buttons-group">
-                            <button class="btn btn-brand btn-brand--danger">Create A Project</button>
-                            <button class="btn btn-brand btn-brand--primary">Sign up</button>
+                            <button class="btn btn-brand btn-brand--danger modal-btn" data-id="log_in">Create A Project</button>
+                            <button class="btn btn-brand btn-brand--primary modal-btn" data-id="sign_up">Sign up</button>
                         </div>
                     </div>
                 </section>
@@ -64,7 +67,7 @@
             
             <main>
                 
-                <!-- Features -->
+                <!-- FEATURES -->
                 <section class="features">
                     <div class="container container--features">
 
@@ -74,7 +77,7 @@
                                 <!-- features graphics -->
                                 <div class="feature__graphics feature__graphics--left">
                                     <div class="feature__balloons-container feature__balloons-container--left">
-                                        <img src="http://via.placeholder.com/200x200" class="feature__balloons" />
+                                        <img src="assets/img/icons/code.png" class="feature__balloons" />
                                     </div>
                                     <div class="feature__watermark feature__watermark--left">
                                         <span>01.</span>
@@ -97,10 +100,10 @@
                                 <!-- features graphics -->
                                 <div class="feature__graphics feature__graphics--right">
                                     <div class="feature__balloons-container feature__balloons-container--right">
-                                        <img src="http://via.placeholder.com/200x200" class="feature__balloons" />
+                                        <img src="assets/img/icons/arrow_down.png" class="feature__balloons" />
                                     </div>
                                     <div class="feature__watermark feature__watermark--right">
-                                        <span>01.</span>
+                                        <span>02.</span>
                                     </div>
                                 </div>                                     
                                 <!--Card-->
@@ -120,10 +123,10 @@
                                 <!-- features graphics -->
                                 <div class="feature__graphics feature__graphics--left">
                                     <div class="feature__balloons-container feature__balloons-container--left">
-                                        <img src="http://via.placeholder.com/200x200" class="feature__balloons" />
+                                        <img src="assets/img/icons/arrow_down.png" class="feature__balloons" />
                                     </div>
                                     <div class="feature__watermark feature__watermark--left">
-                                        <span>01.</span>
+                                        <span>03.</span>
                                     </div>
                                 </div>                                     
                                 <!--Card-->
@@ -143,10 +146,10 @@
                                 <!-- features graphics -->
                                 <div class="feature__graphics feature__graphics--right">
                                     <div class="feature__balloons-container feature__balloons-container--right">
-                                        <img src="http://via.placeholder.com/200x200" class="feature__balloons" />
+                                        <img src="assets/img/icons/arrow_down.png" class="feature__balloons" />
                                     </div>
                                     <div class="feature__watermark feature__watermark--right">
-                                        <span>01.</span>
+                                        <span>04.</span>
                                     </div>
                                 </div>                                     
                                 <!--Card-->
@@ -171,6 +174,8 @@
                 </section>
                 
             </main>
+
+            <!-- FOOTER -->
             <footer class="footer">
                 <div class="container">
                     <ul class="d-flex justify-content-between none-list-style-type mb-0 footer__list">
@@ -188,7 +193,66 @@
                     </ul>
                 </div>
             </footer>
+
+        
             
+            <div id="sign_up" class="modal">
+                <a href="javascript:void(0);" onclick="Custombox.modal.close();" class="demo-close"><i class="fa fa-times"></i></a>
+                <!-- MODAL FORM -->
+                <form method="" id="modal__form" class="modal__form">
+                    <p class="modal__heading">Sign Up For Fotomi</p>
+                    <label for="name">Full Name:</label>
+                    <div class="md-form">
+                        <input type="text" class="input-alternate form-control" id="name" name="name" placeholder="Enter your name">
+                    </div>	
+                    <label for="name">Email Address:</label>
+                    <div class="md-form">
+                        <input type="email" class="input-alternate form-control" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <label for="password">Password:</label>
+                    <div class="md-form">
+                        <input type="password" class="input-alternate form-control" id="password" name="password">
+                    </div>
+                    
+                    
+                    <button type="submit" class="btn btn-brand btn-brand--danger btn-block">Sign Up</button>
+                    <p class="text-center mt-3 mb-0">Already a user?..<a href="#" class="c-red modal-btn"  data-id="log_in">Log In</a> </p>
+                </form>
+                <div class="modal__divider text-center">
+                    <p class="mt-3 mb-0">...or sign up with...</p>
+                    <div class="modal__buttons-group">
+                        <button class="btn btn-brand btn-brand--facebook">Create A Project</button>
+                        <button class="btn btn-brand btn-brand--twitter">Sign up</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="log_in" class="modal">
+                <a href="javascript:void(0);" onclick="Custombox.modal.close();" class="demo-close"><i class="fa fa-times"></i></a>
+                <!-- MODAL FORM -->
+                <form method="" id="modal__form" class="modal__form">
+                    <p class="modal__heading">Login to Fotomi</p>	
+                    <label for="name">Email Address:</label>
+                    <div class="md-form">
+                        <input type="email" class="input-alternate form-control" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <label for="password">Password:</label>
+                    <div class="md-form">
+                        <input type="password" class="input-alternate form-control" id="password" name="password">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <label>
+                            <input type="checkbox" name="rememberme" value="rememberme">Remember Me
+                        </label>
+                        <a href="#">forgot passowrd?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-brand btn-brand--danger btn-block">Submit</button>
+                    <p class="text-center mt-3 mb-0">Not a user?..<a href="#" class="c-red modal-btn"  data-id="sign_up">Sign Up</a> </p>
+                </form>
+            </div>
+        
+           
 		</div>
 
 		
@@ -197,9 +261,19 @@
 		<script type="text/javascript" src="assets/node_modules/mdbootstrap/js/popper.min.js"></script>
 
 		<script type="text/javascript" src="assets/node_modules/mdbootstrap/js/bootstrap.min.js"></script>
-		
-		<script type="text/javascript" src="assets/js/main.js"></script>
-		
+        
+        <!-- Custom Modal -->
+        <script type="text/javascript" src="assets/node_modules/custombox/dist/custombox.min.js"></script>
+        <script type="text/javascript" src="assets/node_modules/custombox/dist/custombox.legacy.min.js"></script>
+
+        <!-- Main Js -->
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                app.custombox();
+            });
+        </script>
 		
 	</body>
 </html>

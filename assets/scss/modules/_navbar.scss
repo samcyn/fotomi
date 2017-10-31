@@ -1,5 +1,5 @@
 .navbar.navbar-light .navbar-nav .nav-item.active >.nav-link {
-    background-color: transparent;
+	background-color: transparent;
 }
 // NAV BAR 1rem == 16px;
 
@@ -7,7 +7,7 @@
 	border-radius: 0;
 	box-shadow: none !important;
 	margin-bottom: 0 !important;
-	padding: 0 1rem;
+	padding: 1rem 1rem;
 
 	.navbar-brand{
 		-webkit-align-self: center !important;
@@ -28,12 +28,18 @@
 	}
 
 	.nav-link{
-		color: $navlink_color !important; 
 		font-size: $navlink_fontSize;
 		line-height: $navbar_lineHeight !important;
 		padding: $navlink_paddingTB $navlink_paddingLR !important;
 	}
 
+	.nav-link__red{
+		color: $navlink_color_red !important;
+	}
+
+	.nav-link__blue{
+		color: $navlink_color_blue !important;
+	}
 
 	.nav-item{
 		position: relative;
