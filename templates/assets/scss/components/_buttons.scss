@@ -1,5 +1,5 @@
 .btn-brand{
-    border-radius: 8px !important;
+    border-radius: 3px !important;
     box-shadow: none !important;
     font-weight: 400;
     line-height: 15px;
@@ -13,5 +13,14 @@
 }
 .btn-brand--primary{
     background: #6EC0D4;
+    color: #FFF;
+}
+.btn-brand--facebook{
+    background: #316280;
+    color: #FFF;
+}
+
+.btn-brand--twitter{
+    background: #00D0DB;
     color: #FFF;
 }

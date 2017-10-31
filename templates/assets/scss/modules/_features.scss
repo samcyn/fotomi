@@ -1,7 +1,7 @@
 .features{
     .container--features{
-        width: 75%;
         margin: 0 auto;
+        width: 72%;
     }
     .feature__heading{
         margin-bottom: 60px;
@@ -9,25 +9,25 @@
     }
     .feature__col{
         position: relative;
-        height: 200px; /**height of image */
+        height: 304px; /**height of image */
         margin-bottom: 50px;
     }
 
     .feature__card{
-        max-width: 65%;
+        max-width: 55%;
         width: 100%;
     }
 
     .feature__graphics{
         position: absolute;
-        max-width: 35%;
+        max-width: 45%;
         width: 100%;
 
         &.feature__graphics--left{
-            left: 0;
+            left: 15px;
         }
         &.feature__graphics--right{
-            right: 0;
+            right: 15px;
         }
     }
     .feature__watermark{
@@ -36,18 +36,18 @@
         font-weight: 900;
         opacity: 0.4;
         position: absolute;
-        bottom: 0;
+        bottom: 40px;
         &.feature__watermark--left{
-            right: -36px;
+            right: -16px;
         }
         &.feature__watermark--right{
-            left: -16px;
+            left: 2px;
         }
     }
 
     .feature__balloons-container{
-        height: 200px;
-        width: 200px;
+        height: 304px;
+        width: 304px;
         &.feature__balloons-container--left{
             margin-right: auto;
         }
