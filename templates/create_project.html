@@ -5,9 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Fotomi</title>
-        
-        <!-- Custom Modal -->
-        <link rel="stylesheet" href="assets/node_modules/custombox/dist/custombox.min.css">
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="assets/node_modules/mdbootstrap/css/bootstrap.min.css">
@@ -56,7 +53,7 @@
             
             <main>
                 
-                <!-- FEATURES -->
+                <!-- PROJECTS -->
                 <section class="project">
                     <div class="container container--project">
 
@@ -66,21 +63,32 @@
                             	
                             <label for="title">Title:</label>
                             <div class="md-form">
-                                <input type="text" class="input-alternate form-control" id="title" name="title" placeholder="Enter your email">
+                                <input type="text" class="input-alternate form-control" id="title" name="title" placeholder="Enter your title">
                             </div>
-                            <label for="password">Password:</label>
+                            <label for="description">Description:</label>
                             <div class="md-form">
-                                <input type="password" class="input-alternate form-control" id="password" name="password">
+                                <textarea class="input-alternate form-control" id="description" name="description" rows="5" placeholder="Enter little description about your project"></textarea>
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <label>
-                                    <input type="checkbox" name="rememberme" value="rememberme">Remember Me
-                                </label>
-                                <a href="#">forgot passowrd?</a>
+                            <label for="email">Customer Email Address:</label>
+                            <div class="md-form">
+                                <input type="email" class="input-alternate form-control" id="email" name="email" placeholder="Enter your email">
+                            </div>
+                            <label for="phone">Customer Phone Number:</label>
+                            <div class="md-form">
+                                <input type="text" class="input-alternate form-control" id="phone" name="phone" placeholder="Enter your phone number">
+                            </div>
+                            <label for="project">Specify Project:</label>
+                            <div class="md-form">
+                                <select class="form-control" placeholder="" id="project" name="project">
+                                    <option value="correction">Correction</option>
+                                    <option value="correction2">Correction2</option>
+                                    <option value="correction">Correction</option>
+                                </select>
                             </div>
                             
-                            <button type="submit" class="btn btn-brand btn-brand--danger btn-block">Submit</button>
-                            <p class="text-center mt-3 mb-0">Not a user?..<a href="#" class="c-red modal-btn"  data-id="sign_up">Sign Up</a> </p>
+                            
+                            <button type="submit" class="btn btn-brand btn-brand--danger btn-block">Create Project</button>
+                            
                         </form>
                     </div>
                 </section>
@@ -108,61 +116,6 @@
 
         
             
-            <div id="sign_up" class="modal">
-                <a href="javascript:void(0);" onclick="Custombox.modal.close();" class="demo-close"><i class="fa fa-times"></i></a>
-                <!-- MODAL FORM -->
-                <form method="" id="modal__form" class="modal__form">
-                    <p class="modal__heading">Sign Up For Fotomi</p>
-                    <label for="name">Full Name:</label>
-                    <div class="md-form">
-                        <input type="text" class="input-alternate form-control" id="name" name="name" placeholder="Enter your name">
-                    </div>	
-                    <label for="name">Email Address:</label>
-                    <div class="md-form">
-                        <input type="email" class="input-alternate form-control" id="email" name="email" placeholder="Enter your email">
-                    </div>
-                    <label for="password">Password:</label>
-                    <div class="md-form">
-                        <input type="password" class="input-alternate form-control" id="password" name="password">
-                    </div>
-                    
-                    
-                    <button type="submit" class="btn btn-brand btn-brand--danger btn-block">Sign Up</button>
-                    <p class="text-center mt-3 mb-0">Already a user?..<a href="#" class="c-red modal-btn"  data-id="log_in">Log In</a> </p>
-                </form>
-                <div class="modal__divider text-center">
-                    <p class="mt-3 mb-0">...or sign up with...</p>
-                    <div class="modal__buttons-group">
-                        <button class="btn btn-brand btn-brand--facebook">Create A Project</button>
-                        <button class="btn btn-brand btn-brand--twitter">Sign up</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="log_in" class="modal">
-                <a href="javascript:void(0);" onclick="Custombox.modal.close();" class="demo-close"><i class="fa fa-times"></i></a>
-                <!-- MODAL FORM -->
-                <form method="" id="modal__form" class="modal__form">
-                    <p class="modal__heading">Login to Fotomi</p>	
-                    <label for="name">Email Address:</label>
-                    <div class="md-form">
-                        <input type="email" class="input-alternate form-control" id="email" name="email" placeholder="Enter your email">
-                    </div>
-                    <label for="password">Password:</label>
-                    <div class="md-form">
-                        <input type="password" class="input-alternate form-control" id="password" name="password">
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <label>
-                            <input type="checkbox" name="rememberme" value="rememberme">Remember Me
-                        </label>
-                        <a href="#">forgot passowrd?</a>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-brand btn-brand--danger btn-block">Submit</button>
-                    <p class="text-center mt-3 mb-0">Not a user?..<a href="#" class="c-red modal-btn"  data-id="sign_up">Sign Up</a> </p>
-                </form>
-            </div>
         
            
 		</div>
@@ -174,9 +127,7 @@
 
 		<script type="text/javascript" src="assets/node_modules/mdbootstrap/js/bootstrap.min.js"></script>
         
-        <!-- Custom Modal -->
-        <script type="text/javascript" src="assets/node_modules/custombox/dist/custombox.min.js"></script>
-        <script type="text/javascript" src="assets/node_modules/custombox/dist/custombox.legacy.min.js"></script>
+       
 
         <!-- Main Js -->
         <script type="text/javascript" src="assets/js/main.js"></script>
