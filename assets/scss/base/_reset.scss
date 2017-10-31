@@ -12,7 +12,8 @@ input[type=search],
 input[type=tel], 
 input[type=text],
 input[type=time], 
-input[type=url], textarea.md-textarea
+input[type=url], textarea.form-control,
+select.form-control
 {
     background: #FFF;
     border: 1px solid #BDBDBD !important;

@@ -9,7 +9,8 @@ input[type=search],
 input[type=tel],
 input[type=text],
 input[type=time],
-input[type=url], textarea.md-textarea {
+input[type=url], textarea.form-control,
+select.form-control {
   background: #FFF;
   border: 1px solid #BDBDBD !important;
   box-shadow: none !important;
@@ -207,6 +208,41 @@ input[type=url], textarea.md-textarea {
   width: 100%;
   height: 100%;
   border-radius: 100%;
+}
+
+/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_create_project.scss */
+.project {
+  padding: 0  0 45px 0;
+}
+
+/* line 3, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_create_project.scss */
+.project .container--project {
+  width: 40%;
+}
+
+/* line 6, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_create_project.scss */
+.project .project__heading {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* line 10, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_create_project.scss */
+.project .card {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  margin-bottom: 16px;
+}
+
+/* line 15, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_create_project.scss */
+.project .card-body {
+  padding: 8px 0 !important;
+}
+
+/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_forms.scss */
+.project__form {
+  background: #6EC0D4;
+  border-radius: 3px;
+  padding: 24px;
 }
 
 /* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_modals.scss */
