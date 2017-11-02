@@ -29,42 +29,44 @@
 	<body>
 
 		<div class="wrapper">
+            <header>
+                <!--Navbar-->
+                <nav class="mb-1 navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/img/logo/logo.png"/>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link nav-link__red waves-effect waves-light modal-btn" href="#" data-id="sign_up">Sign up <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-link__blue waves-effect waves-light modal-btn" href="#" data-id="log_in">Login </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Welcome banner -->
+                <section class="banner">
+                    <div class="text-center">
+                        <h4 class="banner__small-heading">Welcome to <span class="c-red">fotomi</span></h4>
+                        <h2 class="banner__big-heading">A uniquely better ways to get your pictures</h2>
+                        <div class="banner__buttons-group">
+                    
+                            <a class="btn btn-brand btn-brand--danger pageload-link" href="#page_2">Create A Project</a>
+                            <a class="btn btn-brand btn-brand--primary modal-btn" data-id="sign_up">Sign up</a>
+                        </div>
+                    </div>
+                </section>
+            </header>
+            
             <div class="page_container show" id="page_1">
-                <header>
-                    <!--Navbar-->
-                    <nav class="mb-1 navbar navbar-expand-lg navbar-light">
-                        <div class="container">
-                            <a class="navbar-brand" href="#">
-                                <img src="assets/img/logo/logo.png"/>
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link nav-link__red waves-effect waves-light modal-btn" href="#" data-id="sign_up">Sign up <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link nav-link__blue waves-effect waves-light modal-btn" href="#" data-id="log_in">Login </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    <!-- Welcome banner -->
-                    <section class="banner">
-                        <div class="text-center">
-                            <h4 class="banner__small-heading">Welcome to <span class="c-red">fotomi</span></h4>
-                            <h2 class="banner__big-heading">A uniquely better ways to get your pictures</h2>
-                            <div class="banner__buttons-group">
-                        
-                                <a class="btn btn-brand btn-brand--danger pageload-link" href="#page_2">Create A Project</a>
-                                <a class="btn btn-brand btn-brand--primary modal-btn" data-id="sign_up">Sign up</a>
-                            </div>
-                        </div>
-                    </section>
-                </header>
+            
                 
                 
                 <main>
@@ -257,29 +259,7 @@
             </div>
 
             <div class="page_container" id="page_2">
-                <header>
-                    <!--Navbar-->
-                    <nav class="mb-1 navbar navbar-expand-lg navbar-light">
-                        <div class="container">
-                            <a class="navbar-brand" href="#">
-                                <img src="assets/img/logo/logo.png"/>
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link nav-link__red waves-effect waves-light" href="#">Sign up <span class="sr-only">(current)</span></a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link nav-link__blue waves-effect waves-light" href="#">Login </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </header>  
+                 
                     
                 <main>
                     
@@ -397,27 +377,27 @@
                     
                 </main>
         
-                <!-- FOOTER -->
-                <footer class="footer">
-                    <div class="container">
-                        <ul class="d-flex justify-content-between none-list-style-type mb-0 footer__list">
-                            <li class="">
-                                &copy 2017 Great Simple All right reserved
-                            </li>
-                            <li class="">
-                                <a href="#">About</a>,
-                                <a href="#">Contact</a>,
-                                <a href="#">Terms</a>,
-                                <a href="#">Privacy</a>,
-                                <a href="#">Licence</a>,
-                                <a href="#">Help</a>
-                            </li> 
-                        </ul>
-                    </div>
-                </footer>
+               
             </div>
 
-            
+             <!-- FOOTER -->
+             <footer class="footer">
+                <div class="container">
+                    <ul class="d-flex justify-content-between none-list-style-type mb-0 footer__list">
+                        <li class="">
+                            &copy 2017 Great Simple All right reserved
+                        </li>
+                        <li class="">
+                            <a href="#">About</a>,
+                            <a href="#">Contact</a>,
+                            <a href="#">Terms</a>,
+                            <a href="#">Privacy</a>,
+                            <a href="#">Licence</a>,
+                            <a href="#">Help</a>
+                        </li> 
+                    </ul>
+                </div>
+            </footer>
 
             <div id="loader" class="pageload-overlay" data-opening="M 0,0 c 0,0 63.5,-16.5 80,0 16.5,16.5 0,60 0,60 L 0,60 Z">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
