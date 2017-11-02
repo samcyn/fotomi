@@ -35,5 +35,33 @@ var app = {
             modal.open();
         });
         
+    },
+    loaderHandler: function(){
+        var pageWrap = document.getElementsByClassName( 'wrapper' )[0],
+        pages = [].slice.call( pageWrap.querySelectorAll( '.page_container' ) ),
+        currentPage = 0,
+        triggerLoading = [].slice.call( pageWrap.querySelectorAll( 'a.pageload-link' ) ),
+        loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400, easingIn : mina.easeinout } );
+
+        function init() {
+            triggerLoading.forEach( function( trigger ) {
+                trigger.addEventListener( 'click', function( ev ) {
+                    ev.preventDefault();
+                    loader.show();
+                    // after some time hide loader
+                    setTimeout( function() {
+                        loader.hide();
+
+                        classie.removeClass( pages[ currentPage ], 'show' );
+                        // update..
+                        currentPage = currentPage ? 0 : 1;
+                        classie.addClass( pages[ currentPage ], 'show' );
+
+                    }, 2000 );
+                } );
+            } );	
+        }
+
+        init();
     }
 }
