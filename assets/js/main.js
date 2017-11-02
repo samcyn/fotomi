@@ -57,7 +57,7 @@ var app = {
                         currentPage = currentPage ? 0 : 1;
                         classie.addClass( pages[ currentPage ], 'show' );
 
-                    }, 2000 );
+                    }, 200000 );
                 } );
             } );	
         }

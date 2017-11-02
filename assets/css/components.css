@@ -12,7 +12,8 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	visibility: hidden;
+    visibility: hidden;
+    z-index: 100;
 }
 
 .pageload-overlay.show {
