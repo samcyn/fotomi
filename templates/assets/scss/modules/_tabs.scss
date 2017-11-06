@@ -1,0 +1,98 @@
+section.tabs{
+    padding: 88.7px 0 65px 0;
+    .container{
+        max-width: 530px !important;
+    }
+    .nav-tabs {
+        border-bottom: 0 !important;
+    }
+    .nav-item{
+        &:first-child{
+            .nav-link{
+                border-top-left-radius: 8px;
+                border-top-right-radius: 0px;
+            }
+        }
+        &:last-child{
+            .nav-link{
+                border-top-left-radius: 0px;
+                border-top-right-radius: 8px;
+            }
+        }
+    }
+    .nav-tabs .nav-link {
+        border: 0 !important; 
+        background-color: #F2F2F2;
+        line-height: 28px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 20px;
+        font-weight: 600;
+        color: #4F4F4F;
+        padding: 21px;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: #4F4F4F;
+        background-color: transparent;
+    }
+
+    .tab-body{
+        background: $form_background;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        padding: 18px 42px 32px 42px; 
+    }
+    .tab__buttons-group{
+        margin-bottom: 25px; 
+        .btn{
+            width: 200px;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            padding: 14px 0 11px 0;
+            line-height: 25px;
+            font-family: 'Nunito-SemiBold';
+            font-size: 18px;
+            border-radius: 8px !important;
+        }
+    }
+
+    .divider{
+        text-align: center;
+        border-top: 1px solid #171717;
+        margin: 0 auto;
+        max-width: 372px;
+        display: block;
+    }
+    .divider__word{
+        position: relative;
+        top: -13px;
+        width: 40px;
+        margin: 0 auto;
+        background:$form_background;
+    }
+    .tab__form{
+        label{
+            line-height: 22px;
+            font-family: 'Nunito-Regular';
+            font-size: 16px;
+            font-weight: 600;
+            color: #4f4f4f;
+        }
+        input{
+            margin: 0 !important;
+        }
+        .md-form{
+            margin-bottom: 16px;
+        }
+        .btn{
+            margin-top: 24px;
+            line-height: 25px;
+            font-family: 'Nunito-Regular';
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 0 9px 0;
+            border-radius: 4px !important;
+        }
+    }
+    
+    
+}

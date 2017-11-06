@@ -1,12 +1,18 @@
-// ul{
-//     padding-left: 0 !important;
-// }
+@import '../components/_containers.scss';
+
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
 
 input[type=date], 
 input[type=datetime-local], 
 input[type=email], 
 input[type=number], 
 input[type=password], 
+input[type=phone],
 input[type=search-md], 
 input[type=search], 
 input[type=tel], 
@@ -14,9 +20,21 @@ input[type=text],
 input[type=time], 
 input[type=url], textarea.form-control,
 select.form-control
+
+input[type=date].input-alternate:focus, 
+input[type=date].input-alternate:hover, 
+input[type=datetime-local].input-alternate:focus, 
+input[type=datetime-local].input-alternate:hover, 
+input[type=email].input-alternate:focus, input[type=email].input-alternate:hover,
+ input[type=number].input-alternate:focus, input[type=number].input-alternate:hover, input[type=password].input-alternate:focus, input[type=password].input-alternate:hover, input[type=search-md].input-alternate:focus, input[type=search-md].input-alternate:hover, input[type=search].input-alternate:focus, input[type=search].input-alternate:hover, input[type=tel].input-alternate:focus, input[type=tel].input-alternate:hover, input[type=text].input-alternate:focus, input[type=text].input-alternate:hover, input[type=time].input-alternate:focus, input[type=time].input-alternate:hover, input[type=url].input-alternate:focus, input[type=url].input-alternate:hover, 
+textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate:hover
 {
-    background: #FFF;
-    border: 1px solid #BDBDBD !important;
     box-shadow: none !important;
     box-sizing: border-box !important;
+    height: 44px !important;
+    border-radius: 4px !important;
+    background-color: #FFF;
+    border: solid 1px #E0E0E0;
+    padding: 0 15px;
+    border-bottom:solid 1px #E0E0E0 !important;
 }
