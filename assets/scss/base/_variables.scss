@@ -1,17 +1,20 @@
 //COLOR
 $brand_color_red: #FF5A5F;
 $brand_color_blue: #6EC0D4;
+$brand_color_grey: #F2F2F2;
 
 // NAVBAR 
 $navlink_color_red: $brand_color_red;
 $navlink_color_blue: $brand_color_blue;
-$navbar_lineHeight: 14px;
-$navlink_fontSize: 12px;
+$navbar_lineHeight: 33px;
+$navlink_fontSize: 24px;
 $navlink_paddingTB: 24px; //2.625rem;
 $navlink_paddingLR: 24px;
 $navlink_bottomLineHeight: 3px;
 $navbar_logo_height: 80px;
+$navlink_fontweight: 600;
+$navbar_font-family: 'Nunito-SemiBold';
 
 
 //BRAND FORMS
-$form_background: $brand_color_blue;
+$form_background: $brand_color_grey;

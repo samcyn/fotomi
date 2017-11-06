@@ -1,8 +1,13 @@
 @import '../modules/_banner.scss';
 @import '../modules/_features.scss';
 @import '../modules/_create_project.scss';
+@import '../modules/_tabs.scss';
 @import '../components/_forms.scss';
 @import '../components/_modals.scss';
+
+main{
+    padding-bottom: 92px;
+}
 
 
 

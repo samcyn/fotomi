@@ -7,7 +7,7 @@
 	border-radius: 0;
 	box-shadow: none !important;
 	margin-bottom: 0 !important;
-	padding: 1rem 1rem;
+	padding: 32px 0 0 0;
 
 	.navbar-brand{
 		-webkit-align-self: center !important;
@@ -31,6 +31,9 @@
 		font-size: $navlink_fontSize;
 		line-height: $navbar_lineHeight !important;
 		padding: $navlink_paddingTB $navlink_paddingLR !important;
+		font-family: $navbar_font-family;
+		font-weight: $navlink_fontweight;
+		text-transform: capitalize;
 	}
 
 	.nav-link__red{

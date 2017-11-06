@@ -37,29 +37,33 @@ var app = {
         
     },
     loaderHandler: function(){
-        var pageWrap = document.getElementsByClassName( 'wrapper' )[0],
-        pages = [].slice.call( pageWrap.querySelectorAll( '.page_container' ) ),
-        currentPage = 0,
-        triggerLoading = [].slice.call( pageWrap.querySelectorAll( 'a.pageload-link' ) ),
+
+        var pageWrap = $('.wrapper'),
+        pages = $('.page_container');
+        triggers = $('a.pageload-link');
+        checker = '';
         loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400, easingIn : mina.easeinout } );
 
         function init() {
-            triggerLoading.forEach( function( trigger ) {
-                trigger.addEventListener( 'click', function( ev ) {
-                    ev.preventDefault();
-                    loader.show();
-                    // after some time hide loader
-                    setTimeout( function() {
-                        loader.hide();
+            
+            triggers.on('click', function(){
+                var $this = $(this);
+                if($this[0].hash === checker){
+                    return;
+                }
+                loader.show();
+                
+                checker = $this[0].hash
+                // after some time hide loader
+                setTimeout( function() {
+                    loader.hide();
 
-                        classie.removeClass( pages[ currentPage ], 'show' );
-                        // update..
-                        currentPage = currentPage ? 0 : 1;
-                        classie.addClass( pages[ currentPage ], 'show' );
+                    pageWrap.find('.page_container').removeClass('show');
+                    
+                    $($this[0].hash).addClass('show');
 
-                    }, 2000 );
-                } );
-            } );	
+                }, 2000 );
+            });	
         }
 
         init();
