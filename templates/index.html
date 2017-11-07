@@ -34,7 +34,7 @@
                 <!--Navbar-->
                 <nav class="mb-1 navbar navbar-expand-lg navbar-light">
                     <div class="container">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand pageload-link" href="#page_1">
                             <img src="assets/img/logo/logo.png"/>
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -299,10 +299,11 @@
                                                     <input type="password" class="input-alternate form-control" id="password_login" name="password_login">
                                                 </div>
                                                 <div class="d-flex justify-content-between">
-                                                    <label>
-                                                        <input type="checkbox" name="rememberme_login" value="rememberme">Remember Me
-                                                    </label>
-                                                    <a href="#" class="c-blue fw-600">forgot passowrd?</a>
+                                                    <div class="form-group">
+                                                        <input type="checkbox" class="filled-in" id="checkbox2">
+                                                        <label for="checkbox2" class="rememberme">Remember me</label>
+                                                    </div>
+                                                    <a href="#" class="c-blue rememberme">forgot passowrd?</a>
                                                 </div>
                                                 
                                                 <button type="submit" class="btn btn-brand btn-brand--danger btn-block">Submit</button>
@@ -363,6 +364,7 @@
         
         <script>
             $(document).ready(function(){
+                
                 app.custombox();
                 app.loaderHandler();
             });

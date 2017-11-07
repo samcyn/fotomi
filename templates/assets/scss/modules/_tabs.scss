@@ -24,7 +24,7 @@ section.tabs{
         border: 0 !important; 
         background-color: #F2F2F2;
         line-height: 28px;
-        font-family: 'Nunito-SemiBold';
+        font-family: 'Nunito-Regular';
         font-size: 20px;
         font-weight: 600;
         color: #4F4F4F;
@@ -49,8 +49,9 @@ section.tabs{
             margin-right: 0 !important;
             padding: 14px 0 11px 0;
             line-height: 25px;
-            font-family: 'Nunito-SemiBold';
+            font-family: 'Nunito-Regular';
             font-size: 18px;
+            font-weight: 600;
             border-radius: 8px !important;
         }
     }
@@ -82,6 +83,12 @@ section.tabs{
         }
         .md-form{
             margin-bottom: 16px;
+        }
+        .rememberme{
+            line-height: 20px;
+            font-family: 'Nunito-Regular';
+            font-size: 14px;
+            font-weight: 600;
         }
         .btn{
             margin-top: 24px;

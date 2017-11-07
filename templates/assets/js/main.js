@@ -36,12 +36,24 @@ var app = {
         });
         
     },
+    handler: function(arg){
+        // after some time hide loader
+        setTimeout( function() {
+            loader.hide();
+
+            pageWrap.find('.page_container').removeClass('show');
+            
+            $(arg).addClass('show');
+
+        }, 2000 );
+    },
     loaderHandler: function(){
 
         var pageWrap = $('.wrapper'),
         pages = $('.page_container');
         triggers = $('a.pageload-link');
-        checker = '';
+        checker = '#page_1';
+        //console.log(window.location.hash);
         loader = new SVGLoader( document.getElementById( 'loader' ), { speedIn : 400, easingIn : mina.easeinout } );
 
         function init() {
@@ -53,7 +65,8 @@ var app = {
                 }
                 loader.show();
                 
-                checker = $this[0].hash
+                checker = $this[0].hash;
+                
                 // after some time hide loader
                 setTimeout( function() {
                     loader.hide();
