@@ -24,6 +24,7 @@
   "homepage": "https://github.com/samcyn/fotomi#readme",
   "dependencies": {
     "custombox": "^4.0.3",
+    "font-awesome": "^4.7.0",
     "mdbootstrap": "^4.4.1"
   }
 }
