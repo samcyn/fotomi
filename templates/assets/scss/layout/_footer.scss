@@ -1,23 +1,22 @@
 .footer{
-    padding: 15px 0;
     position: absolute;
     width: 100%;
     bottom: 0;
 }
 
 .footer__list{
-    padding: 15px 24px !important;
+    padding: 32px 24px !important;
     border-radius: 8px;
-    border: solid 1px #bdbdbd;
+    // border: solid 1px #bdbdbd;
     li:first-child{
-        font-size: 16px;
-        font-family:'Nunito-Regular';
+        font-size: 14px;
+        font-family:'Nunito-Bold';
         font-weight: bold;
         color: #BDBDBD;
     }
     li:last-child a{
         line-height: 22px;
-        font-family: 'Nunito-Regular';
+        font-family: 'Nunito-Bold';
         font-size: 16px;
         font-weight: bold;
         color: rgba(255, 90, 95, 0.7);
