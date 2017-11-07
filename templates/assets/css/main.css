@@ -522,7 +522,7 @@ main {
 
 /* line 7, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
 .footer__list {
-  padding: 32px 24px !important;
+  padding: 32px 0 !important;
   border-radius: 8px;
 }
 
