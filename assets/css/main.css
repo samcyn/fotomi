@@ -202,7 +202,7 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
   font-size: 24px;
   line-height: 33px !important;
   padding: 17px 12px !important;
-  font-family: "Nunito-Regular";
+  font-family: "Nunito-SemiBold";
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -246,25 +246,25 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
 
 /* line 13, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_banner.scss */
 .banner .banner__big-heading {
-  line-height: 88px;
-  font-family: 'Nunito-Regular';
+  line-height: 81px;
+  font-family: 'Nunito-Bold';
   font-size: 64px;
   font-weight: bold;
   color: #333333;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 /* line 22, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_banner.scss */
 .banner .banner__buttons-group .btn {
   width: 192px;
-  line-height: 28px;
-  font-family: 'Nunito-Regular';
+  line-height: 26px;
+  font-family: 'Nunito-Bold';
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   text-transform: capitalize;
-  border-radius: 8px !important;
-  padding: 11px !important;
+  border-radius: 4px !important;
+  padding: 12px !important;
 }
 
 /* line 2, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
@@ -515,31 +515,29 @@ main {
 
 /* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
 .footer {
-  padding: 15px 0;
   position: absolute;
   width: 100%;
   bottom: 0;
 }
 
-/* line 8, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+/* line 7, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
 .footer__list {
-  padding: 15px 24px !important;
+  padding: 32px 24px !important;
   border-radius: 8px;
-  border: solid 1px #bdbdbd;
 }
 
-/* line 12, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+/* line 11, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
 .footer__list li:first-child {
-  font-size: 16px;
-  font-family: 'Nunito-Regular';
+  font-size: 14px;
+  font-family: 'Nunito-Bold';
   font-weight: bold;
   color: #BDBDBD;
 }
 
-/* line 18, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+/* line 17, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
 .footer__list li:last-child a {
   line-height: 22px;
-  font-family: 'Nunito-Regular';
+  font-family: 'Nunito-Bold';
   font-size: 16px;
   font-weight: bold;
   color: rgba(255, 90, 95, 0.7);
