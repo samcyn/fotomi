@@ -165,7 +165,7 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
   border-radius: 0;
   box-shadow: none !important;
   margin-bottom: 0 !important;
-  padding: 32px 0 0 0;
+  padding: 32px 0 0 0 !important;
 }
 
 /* line 12, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_navbar.scss */
@@ -201,8 +201,8 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
 .navbar .nav-link {
   font-size: 24px;
   line-height: 33px !important;
-  padding: 24px 24px !important;
-  font-family: "Nunito-SemiBold";
+  padding: 17px 12px !important;
+  font-family: "Nunito-Regular";
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -231,7 +231,7 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
 .banner {
   align-items: center;
   display: flex;
-  height: 390px;
+  height: 425px;
   justify-content: center;
 }
 
@@ -247,9 +247,9 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
 /* line 13, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_banner.scss */
 .banner .banner__big-heading {
   line-height: 88px;
-  font-family: 'Nunito-Bold';
+  font-family: 'Nunito-Regular';
   font-size: 64px;
-  font-weight: 700;
+  font-weight: bold;
   color: #333333;
   margin-bottom: 16px;
 }
@@ -413,7 +413,7 @@ section.tabs .nav-tabs .nav-link {
   border: 0 !important;
   background-color: #F2F2F2;
   line-height: 28px;
-  font-family: 'Nunito-SemiBold';
+  font-family: 'Nunito-Regular';
   font-size: 20px;
   font-weight: 600;
   color: #4F4F4F;
@@ -446,12 +446,13 @@ section.tabs .tab__buttons-group .btn {
   margin-right: 0 !important;
   padding: 14px 0 11px 0;
   line-height: 25px;
-  font-family: 'Nunito-SemiBold';
+  font-family: 'Nunito-Regular';
   font-size: 18px;
+  font-weight: 600;
   border-radius: 8px !important;
 }
 
-/* line 58, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 59, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .divider {
   text-align: center;
   border-top: 1px solid #171717;
@@ -460,7 +461,7 @@ section.tabs .divider {
   display: block;
 }
 
-/* line 65, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 66, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .divider__word {
   position: relative;
   top: -13px;
@@ -469,7 +470,7 @@ section.tabs .divider__word {
   background: #F2F2F2;
 }
 
-/* line 73, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 74, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .tab__form label {
   line-height: 22px;
   font-family: 'Nunito-Regular';
@@ -478,17 +479,25 @@ section.tabs .tab__form label {
   color: #4f4f4f;
 }
 
-/* line 80, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 81, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .tab__form input {
   margin: 0 !important;
 }
 
-/* line 83, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 84, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .tab__form .md-form {
   margin-bottom: 16px;
 }
 
-/* line 86, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 87, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+section.tabs .tab__form .rememberme {
+  line-height: 20px;
+  font-family: 'Nunito-Regular';
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* line 93, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .tab__form .btn {
   margin-top: 24px;
   line-height: 25px;

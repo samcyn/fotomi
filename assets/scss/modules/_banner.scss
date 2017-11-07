@@ -1,7 +1,7 @@
 .banner{
     align-items: center;
     display: flex;
-    height: 390px;
+    height: 425px;
     justify-content: center;
     .banner__small-heading{
         line-height: 33px;
@@ -12,9 +12,9 @@
     }
     .banner__big-heading{
         line-height: 88px;
-        font-family: 'Nunito-Bold';
+        font-family: 'Nunito-Regular';
         font-size: 64px;
-        font-weight: 700;
+        font-weight: bold;
         color: #333333;
         margin-bottom: 16px;
     }
