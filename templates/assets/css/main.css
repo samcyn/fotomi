@@ -411,7 +411,7 @@ section.tabs .nav-item:last-child .nav-link {
 /* line 23, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .nav-tabs .nav-link {
   border: 0 !important;
-  background-color: #F2F2F2;
+  background-color: transparent;
   line-height: 28px;
   font-family: 'Nunito-Regular';
   font-size: 20px;
@@ -423,7 +423,7 @@ section.tabs .nav-tabs .nav-link {
 /* line 33, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .nav-tabs .nav-item.show .nav-link, section.tabs .nav-tabs .nav-link.active {
   color: #4F4F4F;
-  background-color: transparent;
+  background-color: #F2F2F2;
 }
 
 /* line 38, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
@@ -449,10 +449,18 @@ section.tabs .tab__buttons-group .btn {
   font-family: 'Nunito-Regular';
   font-size: 18px;
   font-weight: 600;
-  border-radius: 8px !important;
+  border-radius: 4px !important;
 }
 
-/* line 59, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 56, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+section.tabs .tab__buttons-group .btn [class*='fa-'] {
+  font-size: 1.51rem;
+  vertical-align: middle;
+  margin-top: -8px;
+  margin-right: 8px;
+}
+
+/* line 65, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .divider {
   text-align: center;
   border-top: 1px solid #171717;
@@ -461,7 +469,7 @@ section.tabs .divider {
   display: block;
 }
 
-/* line 66, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 72, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .divider__word {
   position: relative;
   top: -13px;
@@ -470,7 +478,7 @@ section.tabs .divider__word {
   background: #F2F2F2;
 }
 
-/* line 74, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 80, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .tab__form label {
   line-height: 22px;
   font-family: 'Nunito-Regular';
@@ -479,17 +487,17 @@ section.tabs .tab__form label {
   color: #4f4f4f;
 }
 
-/* line 81, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 87, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .tab__form input {
   margin: 0 !important;
 }
 
-/* line 84, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 90, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .tab__form .md-form {
   margin-bottom: 16px;
 }
 
-/* line 87, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 93, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .tab__form .rememberme {
   line-height: 20px;
   font-family: 'Nunito-Regular';
@@ -497,7 +505,7 @@ section.tabs .tab__form .rememberme {
   font-weight: 600;
 }
 
-/* line 93, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
+/* line 99, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs .tab__form .btn {
   margin-top: 24px;
   line-height: 25px;
@@ -571,13 +579,13 @@ main {
 
 /* line 21, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_buttons.scss */
 .btn-brand--facebook {
-  background: #316280;
+  background: #4267B2;
   color: #FFF;
 }
 
 /* line 26, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_buttons.scss */
-.btn-brand--twitter {
-  background: #00D0DB;
+.btn-brand--instagram {
+  background: #3F729B;
   color: #FFF;
 }
 
