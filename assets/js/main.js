@@ -22,15 +22,17 @@ var app = {
     },
     pageLinks: function(){
         var _this = this,
-        _checker = window.location.hash || '#landing_page',
+       
         _links =  $('a.pageload-link');
 
         _links.on("click", function(e){
            
             e.preventDefault();
 
-            var $this = $(this);
+            var $this = $(this),
+            _checker = window.location.hash || '#landing_page';
            
+            console.log($this[0].hash, _checker);
             if($this[0].hash === _checker){
                 return;
             }
