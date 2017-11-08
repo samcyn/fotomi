@@ -64,7 +64,7 @@
                             <h2 class="banner__big-heading">A Photographic Work Tool </h2>
                             <p class="banner__small-heading">A Simple way to collaborate with your clients</p>
                             <div class="banner__buttons-group">
-                                <a class="btn btn-brand btn-brand--danger pageload-link" href="#create_project">Get Started</a>
+                                <a class="btn btn-brand btn-brand--danger btn-brand--custom pageload-link" href="#page_login">Get Started</a>
                             </div>
                         </div>
                     </section>
@@ -116,16 +116,16 @@
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs nav-justified" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#panel5" role="tab">Sign Up</a>
+                                    <a class="nav-link" data-toggle="tab" href="#panel5" role="tab">Sign Up</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#panel6" role="tab">Sign In</a>
+                                    <a class="nav-link active" data-toggle="tab" href="#panel6" role="tab">Sign In</a>
                                 </li>
                             </ul>
                             <!-- Tab panels -->
                             <div class="tab-content">
                                 <!--Panel 1-->
-                                <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
+                                <div class="tab-pane fade" id="panel5" role="tabpanel">
                                     <div class="tab-body">
                                         <div class="tab__divider text-center">
                                             
@@ -181,7 +181,7 @@
                                 </div>
                                 <!--/.Panel 1-->
                                 <!--Panel 2-->
-                                <div class="tab-pane fade" id="panel6" role="tabpanel">
+                                <div class="tab-pane fade in show active" id="panel6" role="tabpanel">
                                     <div class="tab-body">
                                         <div class="tab__divider text-center">
                                                 
@@ -199,7 +199,7 @@
                                             </div>
                                         </div>
                                         <!-- MODAL FORM -->
-                                        <form method="" class="tab__form">
+                                        <form method="#" class="tab__form" id="signin__form">
                                             
                                             <label for="email_login">Email Address:</label>
                                             <div class="md-form">
@@ -217,7 +217,7 @@
                                                 <a href="#" class="c-blue rememberme">forgot passowrd?</a>
                                             </div>
                                             
-                                            <button type="submit" class="btn btn-brand btn-brand--danger btn-block">Submit</button>
+                                            <button type="submit" class="btn btn-brand btn-brand--danger btn-block" id="rest">Submit</button>
                                         
                                         </form>
                                     </div>
@@ -245,7 +245,7 @@
                                 </div>
                             </div>
                            
-                            <button class="btn btn-brand btn-brand--danger">Add Pictures</button>
+                            <button class="btn btn-brand btn-brand--danger btn-brand--custom">Add Pictures</button>
                         </div>        
                     </section>
                 
@@ -277,7 +277,7 @@
                                                 <span class="projects__name align-self-center">Adekunle</span>
                                                 <span class="projects__date align-self-center">12/12/2017</span>
                                             </div>
-                                            <button class="btn btn-brand btn-brand--danger">Correction</button>
+                                            <button class="btn btn-brand btn-brand--danger btn-brand--custom">Correction</button>
                                         </div>
                                     </div>
                                 </div>
@@ -299,7 +299,7 @@
                                                 <span class="projects__name align-self-center">Adekunle</span>
                                                 <span class="projects__date align-self-center">12/12/2017</span>
                                             </div>
-                                            <button class="btn btn-brand btn-brand--primary">Final</button>
+                                            <button class="btn btn-brand btn-brand--primary btn-brand--custom">Final</button>
                                         </div>
                                     </div>
                                 </div>
@@ -546,8 +546,8 @@
                                 </div>
                             </div>
                             <div>
-                                <button class="btn btn-brand btn-brand--danger">Confirm</button>
-                                <button class="btn btn-brand btn-brand--primary">Not Confirmed</button>
+                                <button class="btn btn-brand btn-brand--danger btn-brand--custom">Confirm</button>
+                                <button class="btn btn-brand btn-brand--primary btn-brand--custom">Not Confirmed</button>
                             </div>
                         </div>        
                     </section>
@@ -698,7 +698,7 @@
                                     <div class="md-form">
                                         <textarea class="input-alternate projects__textarea" id="message" name="message" placeholder="Reply"></textarea>
                                     </div>
-                                    <button class="btn btn-brand btn-brand--primary">Reply</button>
+                                    <button class="btn btn-brand btn-brand--primary btn-brand--custom">Reply</button>
                                 </form>
                             </div>
                         </div>        
@@ -918,8 +918,11 @@
         <script>
             
             $(document).ready(function(){
-                
-                app.loaderHandler();
+                app.onPageRefresh();
+                app.pageLinks();
+                app.login_form();
+
+               
                 
             });
         </script>

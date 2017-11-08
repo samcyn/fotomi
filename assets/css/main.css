@@ -254,19 +254,6 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
   margin-bottom: 24px;
 }
 
-/* line 22, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_banner.scss */
-.banner .banner__buttons-group .btn {
-  width: 192px;
-  line-height: 26px;
-  font-family: 'Nunito-Bold';
-  font-size: 20px;
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: capitalize;
-  border-radius: 4px !important;
-  padding: 12px !important;
-}
-
 /* line 2, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
 .features .container--features {
   margin: 0 auto;
@@ -521,17 +508,6 @@ section.tabs .tab__form .btn {
   padding: 60.7px 0 52px 0;
 }
 
-/* line 3, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_uploads.scss */
-.uploads .btn {
-  width: 192px;
-  border-radius: 4px;
-  line-height: 26px;
-  font-family: 'Nunito-Bold';
-  font-size: 20px;
-  font-weight: bold;
-  padding: 12px 0;
-}
-
 /* line 13, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_uploads.scss */
 .uploads__heading {
   line-height: 41px;
@@ -606,17 +582,6 @@ section.tabs .tab__form .btn {
 /* line 9, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
 .projects .card-body div.d-flex {
   margin-bottom: 34px;
-}
-
-/* line 13, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
-.projects .btn {
-  width: 192px;
-  border-radius: 4px !important;
-  line-height: 26px;
-  font-family: 'Nunito-Bold';
-  font-size: 20px;
-  font-weight: bold;
-  padding: 12px 0;
 }
 
 /* line 22, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
@@ -717,7 +682,7 @@ main {
 
 /* line 4, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_buttons.scss */
 .btn-brand {
-  border-radius: 3px !important;
+  border-radius: 4px !important;
   box-shadow: none !important;
   font-weight: 400;
   line-height: 15px;
@@ -746,6 +711,16 @@ main {
 .btn-brand--instagram {
   background: #3F729B;
   color: #FFF;
+}
+
+/* line 31, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_buttons.scss */
+.btn-brand--custom {
+  width: 192px;
+  line-height: 26px;
+  font-family: 'Nunito-Bold';
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px !important;
 }
 
 /* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_cards.scss */

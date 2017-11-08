@@ -2,7 +2,7 @@
     text-transform: capitalize;
 }
 .btn-brand{
-    border-radius: 3px !important;
+    border-radius: 4px !important;
     box-shadow: none !important;
     font-weight: 400;
     line-height: 15px;
@@ -26,4 +26,13 @@
 .btn-brand--instagram{
     background: #3F729B;
     color: #FFF;
+}
+
+.btn-brand--custom{
+    width: 192px;
+    line-height: 26px;
+    font-family: 'Nunito-Bold';
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px !important;
 }
