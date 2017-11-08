@@ -1,0 +1,68 @@
+.projects{
+    padding: 60.7px 0 58px 0; 
+    .card{
+        box-shadow: none !important;
+        background: transparent !important;
+    }
+    .card-body{
+        padding: 16px 0 !important;
+        div.d-flex{
+            margin-bottom: 34px;
+        }
+    }
+    .btn{
+        width: 192px;
+        border-radius: 4px !important;
+        line-height: 26px;
+        font-family: 'Nunito-Bold';
+        font-size: 20px;
+        font-weight: bold;
+        padding: 12px 0;
+    }
+    .view.overlay{
+        border-radius: 4px !important;
+    }
+}
+.projects__heading{
+    line-height: 41px;
+    font-family: 'Nunito-Bold';
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 60px;
+}
+
+.projects__img{
+    width: 100%;
+    height: 260px;
+}
+
+.projects__name{
+    line-height: 26px;
+    font-family: 'Nunito-Bold';
+    font-size: 20px;
+    font-weight: bold;
+    color: #4F4F4F;
+}
+
+.projects__date{
+    line-height: 21px;
+    font-family: 'Nunito-Bold';
+    font-size: 16px;
+    font-weight: bold;
+    color: #BDBDBD;
+}
+.projects__textarea{
+    max-width: 520px;
+    height: 200px !important;
+    margin: 0 auto;
+    border-radius: 4px !important;
+}
+
+.projects__form{
+    padding: 32px 24px;
+    max-width: 448px;
+    margin: 0 auto;
+    background: $form_background;
+    border-radius: 8px; 
+}

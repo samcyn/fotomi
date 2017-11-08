@@ -1,0 +1,60 @@
+.uploads{
+    padding: 60.7px 0 52px 0;
+    .btn{
+        width: 192px;
+        border-radius: 4px;
+        line-height: 26px;
+        font-family: 'Nunito-Bold';
+        font-size: 20px;
+        font-weight: bold;
+        padding: 12px 0;
+    }
+}
+.uploads__heading{
+    line-height: 41px;
+    font-family: 'Nunito-Bold';
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 16px;
+}
+
+.uploads__subheading{
+    line-height: 23px;
+    font-family: 'Nunito-Bold';
+    font-size: 18px;
+    font-weight: bold;
+    color: #828282;
+    margin-bottom: 40px;
+}
+
+/*styling of input/photo */
+.uploads__image-container{
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 34px;
+}
+ .uploads__picture{
+    max-width: 450px;
+    height: 390px;
+    margin: 5px auto;
+    overflow: hidden;
+   
+}
+
+.uploads__picture input[type="file"] {
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0 !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.uploads__picture-src{
+    width: 100%;
+    height: 100%;   
+}
