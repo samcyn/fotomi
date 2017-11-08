@@ -1,0 +1,46 @@
+/*styling of input/photo */
+/* line 2, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/uploads.scss */
+.picture-container {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* line 7, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/uploads.scss */
+.picture {
+  width: 106px;
+  height: 106px;
+  background-color: #999999;
+  border: 4px solid #CCCCCC;
+  color: #FFFFFF;
+  border-radius: 50%;
+  margin: 5px auto;
+  overflow: hidden;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+
+/* line 20, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/uploads.scss */
+.picture:hover {
+  border-color: #222;
+}
+
+/* line 24, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/uploads.scss */
+.picture input[type="file"] {
+  cursor: pointer;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 35, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/uploads.scss */
+.picture-src {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=../../css/modules/uploads.map */

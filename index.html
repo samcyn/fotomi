@@ -56,7 +56,7 @@
             <main>
 
                 <!-- Landing page -->
-                <div class="page_container" id="landing_page">
+                <div class="page_container show" id="landing_page">
 
                     <!-- Welcome banner -->
                     <section class="banner">
@@ -75,113 +75,32 @@
                 <div class="page_container" id="create_project">   
                  
                     <!-- PROJECTS -->
-                    <section class="project">
+                    <section class="projects">
                         <div class="container">
     
-                            <h4 class="project__heading">Create A Project</h4>
-                            <!-- PROJECTS THUMBNAILS -->
-                            <div class="row">
-                                <div class="col col-md-3">
-                                    <!--Card-->
-                                    <div class="card">
+                            <h4 class="projects__heading text-center">Create A Project</h4>
+                            <!-- forms here -->
+                            <form method="" class="projects__form">
                                     
-                                        <!--Card image-->
-                                        <div class="view overlay hm-white-slight">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                                            <a href="#">
-                                                <div class="mask"></div>
-                                            </a>
-                                        </div>
-                                    
-                                        <!--Card content-->
-                                        <div class="card-body d-flex justify-content-between">
-                                            <span>Adekunle</span>
-                                            <span>12/12/2017</span>
-                                        </div>
-                                    
-                                    </div>
+                                <label for="title">Title:</label>
+                                <div class="md-form">
+                                    <input type="text" class="input-alternate form-control" id="title" name="title">
                                 </div>
-                                <div class="col col-md-3">
-                                    <!--Card-->
-                                    <div class="card">
-                                    
-                                        <!--Card image-->
-                                        <div class="view overlay hm-white-slight">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                                            <a href="#">
-                                                <div class="mask"></div>
-                                            </a>
-                                        </div>
-                                    
-                                        <!--Card content-->
-                                        <div class="card-body d-flex justify-content-between">
-                                            <span>Adekunle</span>
-                                            <span>12/12/2017</span>
-                                        </div>
-                                    
-                                    </div>
+                                <label for="description">Description:</label>
+                                <div class="md-form">
+                                    <textarea class="input-alternate form-control" id="description" name="description" rows="5" ></textarea>
                                 </div>
-                                <div class="col col-md-3">
-                                    <!--Card-->
-                                    <div class="card">
-                                    
-                                        <!--Card image-->
-                                        <div class="view overlay hm-white-slight">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                                            <a href="#">
-                                                <div class="mask"></div>
-                                            </a>
-                                        </div>
-                                    
-                                        <!--Card content-->
-                                        <div class="card-body d-flex justify-content-between">
-                                            <span>Adekunle</span>
-                                            <span>12/12/2017</span>
-                                        </div>
-                                    
-                                    </div>
+                                <label for="email">Customer Email Address:</label>
+                                <div class="md-form">
+                                    <input type="email" class="input-alternate form-control" id="email" name="email" >
                                 </div>
-                                <div class="col col-md-3">
-                                    <!--Card-->
-                                    <div class="card">
-                                    
-                                        <!--Card image-->
-                                        <div class="view overlay hm-white-slight">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                                            <a href="#">
-                                                <div class="mask"></div>
-                                            </a>
-                                        </div>
-                                    
-                                        <!--Card content-->
-                                        <div class="card-body d-flex justify-content-between">
-                                            <span>Adekunle</span>
-                                            <span>12/12/2017</span>
-                                        </div>
-                                    
-                                    </div>
+                                <label for="phone">Customer Phone Number:</label>
+                                <div class="md-form">
+                                    <input type="text" class="input-alternate form-control" id="phone" name="phone">
                                 </div>
-                                <div class="col col-md-3">
-                                    <!--Card-->
-                                    <div class="card">
-                                    
-                                        <!--Card image-->
-                                        <div class="view overlay hm-white-slight">
-                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="img-fluid" alt="">
-                                            <a href="#">
-                                                <div class="mask"></div>
-                                            </a>
-                                        </div>
-                                    
-                                        <!--Card content-->
-                                        <div class="card-body d-flex justify-content-between">
-                                            <span>Adekunle</span>
-                                            <span>12/12/2017</span>
-                                        </div>
-                                    
-                                    </div>
-                                </div>
-                            </div>
+                                <button type="submit" class="btn btn-brand btn-brand--danger btn-block">Create Project</button>
+                                
+                            </form>
                             
                         </div>
                     </section>
@@ -312,17 +231,647 @@
                 </div>
 
                 <!-- Upload Image Page -->
-                <div class="page_container show" id="image_upload">
+                <div class="page_container" id="image_upload">
                     
-                    <section class="uploads">
+                    <section class="uploads text-center">
                         <div class="container">
-                                            
-                                      
-
+                            <h4 class="uploads__heading">Upload Pictures</h4>
+                            <p class="uploads__subheading">Only zip files can be uploaded</p>
+                            
+                            <div class="uploads__image-container">
+                                <div class="uploads__picture">
+                                     <img src="" class="uploads__picture-src"/>
+                                     <input type="file" class="uploads__file-input"  accept="image/*">
+                                </div>
+                            </div>
+                           
+                            <button class="btn btn-brand btn-brand--danger">Add Pictures</button>
                         </div>        
                     </section>
                 
                 </div>
+
+                 <!-- Projects -->
+                <div class="page_container" id="projects_1">
+                        
+                    <section class="projects text-center">
+                        <div class="container">
+                            <h4 class="projects__heading">Adekunle</h4>
+                            
+                            <div class="row justify-content-md-center">
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                            <button class="btn btn-brand btn-brand--danger">Correction</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                            <button class="btn btn-brand btn-brand--primary">Final</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </section>
+                
+                </div>
+
+                <div class="page_container" id="projects_2">
+                        
+                    <section class="projects text-center">
+                        <div class="container">
+                            <h4 class="projects__heading">Projects</h4>
+                            
+                            <div class="row justify-content-md-center">
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </section>
+                
+                </div>
+
+                <div class="page_container" id="projects_3">
+                        
+                    <section class="projects text-center">
+                        <div class="container">
+                            <h4 class="projects__heading">Final Pictures</h4>
+
+                            <div class="d-flex justify-content-between">
+                                <p>Link: url</p>
+                                <p>Access code: 002123</p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-brand btn-brand--danger">Confirm</button>
+                                <button class="btn btn-brand btn-brand--primary">Not Confirmed</button>
+                            </div>
+                        </div>        
+                    </section>
+                
+                </div>
+
+                <div class="page_container" id="projects_4">
+                        
+                    <section class="projects text-center">
+                        <div class="container">
+                            <h4 class="projects__heading">Selected Pictures</h4>
+
+                            <div class="d-flex justify-content-between">
+                                <p>Link: url</p>
+                                <p>Access code: 002123</p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <form>
+                                    <div class="md-form">
+                                        <textarea class="input-alternate projects__textarea" id="message" name="message" placeholder="Reply"></textarea>
+                                    </div>
+                                    <button class="btn btn-brand btn-brand--primary">Reply</button>
+                                </form>
+                            </div>
+                        </div>        
+                    </section>
+                
+                </div>
+
+                <div class="page_container" id="projects_5">
+                        
+                    <section class="projects text-center">
+                        <div class="container">
+                            <h4 class="projects__heading">Uploaded Pictures</h4>
+
+                            <div class="d-flex justify-content-between">
+                                <p>Link: url</p>
+                                <p>Access code: 002123</p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>        
+                    </section>
+                
+                </div>
+
 
 
             </main>
