@@ -254,120 +254,6 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
   margin-bottom: 24px;
 }
 
-/* line 2, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .container--features {
-  margin: 0 auto;
-  width: 72%;
-}
-
-/* line 6, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__heading {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-/* line 10, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__col {
-  position: relative;
-  height: 304px;
-  /**height of image */
-  margin-bottom: 50px;
-}
-
-/* line 16, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__card {
-  max-width: 55%;
-  width: 100%;
-}
-
-/* line 21, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__graphics {
-  position: absolute;
-  max-width: 45%;
-  width: 100%;
-}
-
-/* line 26, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__graphics.feature__graphics--left {
-  left: 15px;
-}
-
-/* line 29, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__graphics.feature__graphics--right {
-  right: 15px;
-}
-
-/* line 33, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__watermark {
-  color: #CDCDCD;
-  font-size: 60px;
-  font-weight: 900;
-  opacity: 0.4;
-  position: absolute;
-  bottom: 40px;
-}
-
-/* line 40, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__watermark.feature__watermark--left {
-  right: -16px;
-}
-
-/* line 43, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__watermark.feature__watermark--right {
-  left: 2px;
-}
-
-/* line 48, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__balloons-container {
-  height: 304px;
-  width: 304px;
-}
-
-/* line 51, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__balloons-container.feature__balloons-container--left {
-  margin-right: auto;
-}
-
-/* line 54, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__balloons-container.feature__balloons-container--right {
-  margin-left: auto;
-}
-
-/* line 58, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_features.scss */
-.features .feature__balloons {
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-}
-
-/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_create_project.scss */
-.project {
-  padding: 0  0 45px 0;
-}
-
-/* line 3, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_create_project.scss */
-.project .container--project {
-  width: 40%;
-}
-
-/* line 6, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_create_project.scss */
-.project .project__heading {
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-/* line 10, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_create_project.scss */
-.project .card {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  margin-bottom: 16px;
-}
-
-/* line 15, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_create_project.scss */
-.project .card-body {
-  padding: 8px 0 !important;
-}
-
 /* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_tabs.scss */
 section.tabs {
   padding: 88.7px 0 65px 0;
@@ -584,12 +470,12 @@ section.tabs .tab__form .btn {
   margin-bottom: 34px;
 }
 
-/* line 22, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
+/* line 13, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
 .projects .view.overlay {
   border-radius: 4px !important;
 }
 
-/* line 26, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
+/* line 17, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
 .projects__heading {
   line-height: 41px;
   font-family: 'Nunito-Bold';
@@ -599,13 +485,13 @@ section.tabs .tab__form .btn {
   margin-bottom: 60px;
 }
 
-/* line 35, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
+/* line 26, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
 .projects__img {
   width: 100%;
   height: 260px;
 }
 
-/* line 40, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
+/* line 31, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
 .projects__name {
   line-height: 26px;
   font-family: 'Nunito-Bold';
@@ -614,7 +500,7 @@ section.tabs .tab__form .btn {
   color: #4F4F4F;
 }
 
-/* line 48, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
+/* line 39, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
 .projects__date {
   line-height: 21px;
   font-family: 'Nunito-Bold';
@@ -623,7 +509,7 @@ section.tabs .tab__form .btn {
   color: #BDBDBD;
 }
 
-/* line 55, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
+/* line 46, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
 .projects__textarea {
   max-width: 520px;
   height: 200px !important;
@@ -631,7 +517,7 @@ section.tabs .tab__form .btn {
   border-radius: 4px !important;
 }
 
-/* line 62, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
+/* line 53, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
 .projects__form {
   padding: 32px 24px;
   max-width: 448px;
