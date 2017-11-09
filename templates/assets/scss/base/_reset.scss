@@ -20,7 +20,6 @@ input[type=text],
 input[type=time], 
 input[type=url], textarea.form-control,
 select.form-control
-
 input[type=date].input-alternate:focus, 
 input[type=date].input-alternate:hover, 
 input[type=datetime-local].input-alternate:focus, 
@@ -37,4 +36,18 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
     border: solid 1px #E0E0E0;
     padding: 0 15px;
     border-bottom:solid 1px #E0E0E0 !important;
+}
+
+label{
+    line-height: 22px;
+    font-family: 'Nunito-Regular';
+    font-size: 16px;
+    font-weight: 600;
+    color: #4f4f4f;
+}
+input{
+    margin: 0 !important;
+}
+.md-form{
+    margin-bottom: 16px;
 }
