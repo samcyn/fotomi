@@ -1,24 +1,73 @@
-// .modal{
-//     background-color: #FFF;
-//     border-radius: 3px;
-//     box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
-//     display: none;
-//     padding: 40px !important;
-//     position: relative;
-//     width: 40%;
-// }
+.modal{
+    background-color: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+    display: none;
+    padding: 32px 91px 26px 91px !important;
+    position: relative;
+    width: 100%;
+    max-width: 692px;
 
-// .modal__form{
-//     background: $form_background;
-//     border-radius: 3px;
-//     padding: 24px;
-//     .modal__heading{
-//         font-size: 20px;
-//         font-weight: 400;
-//         text-align: center;
-//     }
-// }
+    input[type='file']{
+        display: none;
+    }
+    input[type='file'] + label{
+        border: 1px solid #BDBDBD;
+        background-color: transparent;
+        padding: 0;
+        max-width: 400px;
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        cursor: pointer;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
 
-// .modal__buttons-group .btn{
-//     width: 175px;
-// }
+    input[type='file'] + label span,
+    input[type='file'] + label strong {
+        padding: 0.625rem 1.25rem;
+    }
+    input[type='file'] + label span{
+        flex: 1;
+    }
+    input[type='file'] + label strong{
+        height: 100%;
+        background-color: #E0E0E0;
+        display: inline-block;
+        font-family: 'Nunito-SemiBold';
+        font-size: 16px;
+        font-weight: 600;
+        color: #828282;
+        width: 105px;
+    }
+
+}
+
+.modal__heading{
+    font-family: 'Nunito-SemiBold';
+    font-size: 16px;
+    font-weight: 600;
+    color: #4F4F4F;
+    margin-bottom: 32px;
+}
+
+.modal__file-container{
+    margin: 8px auto 34px auto;
+}
+.modal__divider{
+    input[type='radio']{
+        width: 16px;
+        height: 16px;
+        align-self: center;
+    }
+    label{
+        line-height: 21px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 16px;
+        font-weight: 600;
+        color: #4F4F4F;
+    }
+}

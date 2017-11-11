@@ -1,5 +1,31 @@
 var app = {
-   
+    custombox: function(){
+        var $btn = $(document).find('#modal_upload');
+        if(!$btn){
+            return;
+        }
+        $btn.on('click', function(){
+        
+            
+            // Instantiate new modal
+            var modal = new Custombox.modal({
+                content: {
+                    effect: 'fadein',
+                    target: '#upload_photo'
+                },
+                // Options
+                loader : {
+                    active: true,
+                    color: '#000',
+                    speed: 1500,
+                }
+            });
+            
+            // Open
+            modal.open();
+        });
+        
+    },
     loaderHandler: function(arg){
 
         var pageWrap = $('.wrapper'),
@@ -43,8 +69,14 @@ var app = {
     },
     login_form: function(){
         var _this = this;
-        $(document).on('submit', '#signin__form', function(e){
+        $(document).on('submit', '#signin__form, #signup__form', function(e){
             e.preventDefault();
+            console.log($(this).attr('id'));
+            var _id = $(this).attr('id');
+            if(_id === 'signin__form'){
+                _this.loaderHandler("#projects_2");
+                return;
+            }
             _this.loaderHandler("#create_project");
         });
     },
