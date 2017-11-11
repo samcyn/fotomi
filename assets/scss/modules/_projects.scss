@@ -1,3 +1,5 @@
+@import '.././components/_mask.scss';
+
 .projects{
     padding: 60.7px 0 58px 0; 
     .card{
@@ -7,7 +9,7 @@
     .card-body{
         padding: 16px 0 !important;
         div.d-flex{
-            margin-bottom: 34px;
+            margin-bottom: 16px;
         }
     }
     .view.overlay{
@@ -17,6 +19,17 @@
     .btn-brand--custom-block{
         margin-top: 24px;
     }
+    label.mask{
+        opacity: 1 !important;
+        .mask__input{
+            height: 24px;
+            width: 24px;
+            top: 16px;
+            right: 16px;
+            position: absolute;
+        }
+        
+    }
 }
 .projects__heading{
     line-height: 41px;
@@ -24,7 +37,38 @@
     font-size: 32px;
     font-weight: bold;
     color: #333333;
-    margin-bottom: 60px;
+    margin-bottom: 8px;
+}
+
+.projects__subheading{
+    line-height: 18px;
+    font-family: 'Nunito-Bold';
+    font-size: 14px;
+    font-weight: bold;
+    color: #BDBDBD;
+    margin-bottom: 40px;
+}
+
+.projects__subheading-button{
+    margin-top: 15px;
+    margin-bottom: 42px;
+}
+
+.projects__line{
+    line-height: 26px;
+    font-family: 'Nunito-Bold';
+    font-size: 20px;
+    font-weight: bold;
+    color: #4F4F4F;
+    margin-bottom: 30px;
+    span{
+        line-height: 22px;
+        font-family: 'Nunito-BoldItalic';
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        color: #BDBDBD;
+    }
 }
 
 .projects__img{
@@ -40,13 +84,23 @@
     color: #4F4F4F;
 }
 
-.projects__date{
+.projects__date,
+.projects__correction
+{
     line-height: 21px;
     font-family: 'Nunito-Bold';
     font-size: 16px;
     font-weight: bold;
     color: #BDBDBD;
 }
+
+.projects__number{
+    line-height: 21px;
+    font-family: 'Nunito-Regular';
+    font-size: 16px;
+    color: #828282;
+}
+
 .projects__textarea{
     max-width: 520px;
     height: 200px !important;
@@ -60,4 +114,8 @@
     margin: 0 auto;
     background: $form_background;
     border-radius: 8px; 
+}
+
+.projects__form-footer{
+    margin-top: 36px;
 }
