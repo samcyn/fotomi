@@ -11,39 +11,6 @@
     input[type='file']{
         display: none;
     }
-    input[type='file'] + label{
-        border: 1px solid #BDBDBD;
-        background-color: transparent;
-        padding: 0;
-        max-width: 400px;
-        font-size: 1.25rem;
-        font-weight: 700;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        cursor: pointer;
-        overflow: hidden;
-        margin: 0 auto;
-        border-radius: 4px;
-    }
-
-    input[type='file'] + label span,
-    input[type='file'] + label strong {
-        padding: 0.625rem 1.25rem;
-    }
-    input[type='file'] + label span{
-        flex: 1;
-    }
-    input[type='file'] + label strong{
-        height: 100%;
-        background-color: #E0E0E0;
-        display: inline-block;
-        font-family: 'Nunito-SemiBold';
-        font-size: 16px;
-        font-weight: 600;
-        color: #828282;
-        width: 105px;
-    }
-
 }
 
 .modal__heading{
@@ -69,5 +36,39 @@
         font-size: 16px;
         font-weight: 600;
         color: #4F4F4F;
+        align-self: center;
     }
+}
+
+.modal__file-label{
+    border: 1px solid #BDBDBD;
+    background-color: transparent;
+    padding: 0;
+    max-width: 400px;
+    font-size: 12px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.modal__file-label span,
+.modal__file-label strong {
+    padding: 0.625rem 1.25rem;
+}
+.modal__file-label span{
+    flex: 1;
+}
+.modal__file-label strong{
+    height: 100%;
+    background-color: #E0E0E0;
+    display: inline-block;
+    font-family: 'Nunito-SemiBold';
+    font-size: 16px;
+    font-weight: 600;
+    color: #828282;
+    width: 105px;
 }
