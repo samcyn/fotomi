@@ -69,7 +69,7 @@ var app = {
     },
     login_form: function(){
         var _this = this;
-        $(document).on('submit', '#signin__form, #signup__form', function(e){
+        $(document).on('submit', 'form', function(e){
             e.preventDefault();
             console.log($(this).attr('id'));
             var _id = $(this).attr('id');
@@ -77,7 +77,20 @@ var app = {
                 _this.loaderHandler("#projects_2");
                 return;
             }
-            _this.loaderHandler("#create_project");
+            else if(_id === 'signup__form'){
+                _this.loaderHandler("#create_project");
+                return;
+            }
+            else if(_id === 'modal__form'){
+                 Custombox.modal.close()
+                _this.loaderHandler("#projects_5");
+                return;
+            }
+            else{
+                _this.loaderHandler("#image_upload");
+            }
+
+           
         });
     },
     onPageRefresh: function(){

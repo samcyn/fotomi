@@ -27,8 +27,10 @@
             top: 16px;
             right: 16px;
             position: absolute;
-        }
-        
+        }  
+    }
+    a.view.overlay{
+        cursor: pointer;
     }
 }
 .projects__heading{
@@ -114,6 +116,7 @@
     margin: 0 auto;
     background: $form_background;
     border-radius: 8px; 
+    margin-top: 52px;
 }
 
 .projects__form-footer{
