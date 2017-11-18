@@ -122,3 +122,22 @@
 .projects__form-footer{
     margin-top: 36px;
 }
+
+.projects__watermark{
+    width: 163px;
+    height: 161px;
+    position: absolute;
+    top: 119.3px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.projects__watermark-left{
+    left: 0;
+}
+
+.projects__watermark-right{
+    right: 0;
+}

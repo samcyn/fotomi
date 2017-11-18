@@ -71,7 +71,13 @@ var app = {
         var _this = this;
         $(document).on('submit', 'form', function(e){
             e.preventDefault();
-            console.log($(this).attr('id'));
+            //console.log($(this).attr('id'));
+            var formInstance = $(this).parsley();
+            
+            if(!formInstance.isValid()){
+                return;
+            }
+
             var _id = $(this).attr('id');
             if(_id === 'signin__form'){
                 _this.loaderHandler("#projects_2");
@@ -99,5 +105,12 @@ var app = {
         if(_hash){
             _this.loaderHandler(_hash);
         }
+    },
+    fileReaderCtrl: function(){
+        $("#file-upload").on('change', function(){
+            var _name = $(this)[0].files[0].name;
+            $("#file_name").text(_name);
+        });
+
     }
 }

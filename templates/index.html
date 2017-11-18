@@ -59,7 +59,7 @@
             <main>
 
                 <!-- Landing page -->
-                <div class="page_container show" id="landing_page">
+                <div class="page_container" id="landing_page">
 
                     <!-- Welcome banner -->
                     <section class="banner">
@@ -82,29 +82,36 @@
                         <div class="container">
     
                             <h4 class="projects__heading text-center">Create A Project</h4>
-                            <!-- forms here -->
-                            <form method="" class="projects__form" id="create_project_form">
+                            <div class="pos-rel">
+                                <!-- forms here -->
+                                <form method="" class="projects__form" id="create_project_form" data-parsley-validate="">
+                                        
+                                    <label for="title">Title:</label>
+                                    <div class="md-form">
+                                        <input type="text" class="input-alternate form-control" id="title" name="title"  data-parsley-trigger="change" data-parsley-minlength="3" required="">
+                                    </div>
+                                    <label for="description">Description:</label>
+                                    <div class="md-form">
+                                        <textarea class="input-alternate md-textarea form-control" id="description" name="description" rows="5" data-parsley-trigger="change" required=""></textarea>
+                                    </div>
+                                    <label for="email">Customer Email Address:</label>
+                                    <div class="md-form">
+                                        <input type="email" class="input-alternate form-control" id="email" name="email" data-parsley-trigger="change" required="">
+                                    </div>
+                                    <label for="phone">Customer Phone Number:</label>
+                                    <div class="md-form">
+                                        <input type="text" class="input-alternate form-control" id="phone" name="phone" data-parsley-type="digits" data-parsley-trigger="change" data-parsley-minlength="11" required="">
+                                    </div>
+                                    <button type="submit" class="btn btn-brand btn-brand--danger btn-block btn-brand--custom-block">Create Project</button>
                                     
-                                <label for="title">Title:</label>
-                                <div class="md-form">
-                                    <input type="text" class="input-alternate form-control" id="title" name="title">
+                                </form>
+                                <div class="projects__watermark projects__watermark-left">
+                                    <img src="assets/img/icons/watermark_left.png">
                                 </div>
-                                <label for="description">Description:</label>
-                                <div class="md-form">
-                                    <textarea class="input-alternate md-textarea form-control" id="description" name="description" rows="5" ></textarea>
+                                <div class="projects__watermark projects__watermark-right">
+                                    <img src="assets/img/icons/watermark_right.png">
                                 </div>
-                                <label for="email">Customer Email Address:</label>
-                                <div class="md-form">
-                                    <input type="email" class="input-alternate form-control" id="email" name="email" >
-                                </div>
-                                <label for="phone">Customer Phone Number:</label>
-                                <div class="md-form">
-                                    <input type="text" class="input-alternate form-control" id="phone" name="phone">
-                                </div>
-                                <button type="submit" class="btn btn-brand btn-brand--danger btn-block btn-brand--custom-block">Create Project</button>
-                                
-                            </form>
-                            
+                            </div>
                         </div>
                     </section>
                         
@@ -146,19 +153,19 @@
                                             </div>
                                         </div>
                                         <!-- MODAL FORM -->
-                                        <form method="" id="signup__form" class="tab__form">
+                                        <form method="" id="signup__form" class="tab__form" data-parsley-validate="">
                                             
                                             <label for="name_signup">Full Name:</label>
                                             <div class="md-form">
-                                                <input type="text" class="input-alternate form-control" id="name_signup" name="name_signup" placeholder="Enter your name">
+                                                <input type="text" class="input-alternate form-control" id="name_signup" name="name_signup" placeholder="Enter your name"  data-parsley-trigger="change" required="">
                                             </div>	
                                             <label for="email_signup">Email Address:</label>
                                             <div class="md-form">
-                                                <input type="email" class="input-alternate form-control" id="email_signup" name="email_signup" placeholder="Enter your email">
+                                                <input type="email" class="input-alternate form-control" id="email_signup" name="email_signup" placeholder="Enter your email"  data-parsley-trigger="change" required="">
                                             </div>
                                             <label for="phone_signup">Phone</label>
                                             <div class="md-form">
-                                                <input type="phone" class="input-alternate form-control" id="phone_signup" name="phone_signup">
+                                                <input type="text" class="input-alternate form-control" id="phone_signup" name="phone_signup"  data-parsley-trigger="change" data-parsley-type="digits" data-parsley-minlength="11"	 required="">
                                             </div>
                                             <label for="gender_signup">Gender</label>
                                             <div class="md-form">
@@ -202,15 +209,15 @@
                                             </div>
                                         </div>
                                         <!-- MODAL FORM -->
-                                        <form method="#" class="tab__form" id="signin__form">
+                                        <form method="#" class="tab__form" id="signin__form" data-parsley-validate="">
                                             
                                             <label for="email_login">Email Address:</label>
                                             <div class="md-form">
-                                                <input type="email" class="input-alternate form-control" id="email_login" name="email_login" placeholder="Enter your email">
+                                                <input type="email" class="input-alternate form-control" id="email_login" name="email_login" placeholder="Enter your email"  data-parsley-trigger="change" required="">
                                             </div>
                                             <label for="password_login">Password:</label>
                                             <div class="md-form">
-                                                <input type="password" class="input-alternate form-control" id="password_login" name="password_login">
+                                                <input type="password" class="input-alternate form-control" id="password_login" name="password_login" data-parsley-minlength="4" data-parsley-trigger="change" required="">
                                             </div>
                                             <div class="d-flex justify-content-between">
                                                 <div class="form-group mb-0">
@@ -319,6 +326,15 @@
                         
                     <section class="projects text-center">
                         <div class="container">
+                            <!-- breadcrumb -->
+                            <div class="breadcrumb-container">
+                                <nav aria-label="breadcrumb" role="navigation">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Projects</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Adekunle</li>
+                                    </ol>
+                                </nav>
+                            </div>
                             <h4 class="projects__heading">Projects</h4>
                            
                             <div class="row justify-content-md-center mt-52">
@@ -1089,10 +1105,19 @@
                 
                 </div>
 
-                <div class="page_container" id="projects_6">
+                <div class="page_container show" id="projects_6">
                     
                     <section class="projects text-center">
                         <div class="container">
+                             <!-- breadcrumb -->
+                            <div class="breadcrumb-container">
+                                <nav aria-label="breadcrumb" role="navigation">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Create Projects</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Adekunle</li>
+                                    </ol>
+                                </nav>
+                            </div>
                             <h4 class="projects__heading">Adekunle</h4>
                             <div class="projects__subheading-button">
                                 <button class="btn btn-brand btn-brand--danger btn-brand--custom" id="modal_upload">Upload</button>
@@ -1220,20 +1245,20 @@
             <div class="modal text-center" id="upload_photo">
                 <p class="modal__heading">Please select the version of the project you are uploading and upload your zipped file</p>
                 <!-- MODAL FORM -->
-                <form method="" id="modal__form" class="modal__form">
+                <form method="" id="modal__form" class="modal__form" data-parsley-validate="">
                     
                     <div class="d-flex justify-content-around modal__divider">
                         <label class="d-flex justify-content-between">
-                            <input type="radio" name="photos" value="correction">Correction
+                            <input type="radio" name="photos" value="correction" required="">Correction
                         </label>
                         <label class="d-flex">
                             <input type="radio" name="photos" value="Final">Final
                         </label>
                     </div>
                     <div class="modal__file-container">
-                        <input type="file" class="input-alternate form-control" id="file-upload" name="file-upload">
-                        <label for="file-upload" class="d-flex justify-content-between">
-                            <span>style.css</span> 
+                        <input type="file" class="input-alternate form-control" id="file-upload" name="file-upload" accept="application/zip" data-parsley-pattern=".*\.zip$" required>
+                        <label for="file-upload" class="modal__file-label d-flex justify-content-between">
+                            <span id="file_name"></span> 
                             <strong>Browse</strong>
                         </label>
                     </div>
@@ -1257,7 +1282,8 @@
        
 
         <script src="assets/js/classie.js"></script>
-		<script src="assets/js/svgLoader.js"></script>
+        <script src="assets/js/svgLoader.js"></script>
+        <script src="assets/node_modules/parsley/parsley.min.js"></script>
         <!-- Main Js -->
         <script type="text/javascript" src="assets/js/main.js"></script>
         
@@ -1267,10 +1293,8 @@
                 app.custombox();
                 app.onPageRefresh();
                 app.pageLinks();
-                app.login_form();
-
-               
-                
+                app.login_form(); 
+                app.fileReaderCtrl(); 
             });
         </script>
 		
