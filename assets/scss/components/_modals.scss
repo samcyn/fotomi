@@ -7,9 +7,11 @@
     position: relative;
     width: 100%;
     max-width: 692px;
-
     input[type='file']{
         display: none;
+    }
+    @media(max-width: 525px){
+        padding: 32px 15px 26px 15px !important;
     }
 }
 

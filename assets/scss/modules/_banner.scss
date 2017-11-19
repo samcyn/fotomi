@@ -11,24 +11,14 @@
         margin-bottom: 26px;
     }
     .banner__big-heading{
-        line-height: 81px;
         font-family: 'Nunito-Bold';
-        font-size: 64px;
         font-weight: bold;
         color: #333333;
         margin-bottom: 24px;
+        @media(min-width: 992px){
+            font-size: 64px;
+            line-height: 81px;
+        }
     }
-    // .banner__buttons-group{
-    //     .btn{
-    //         width: 192px;
-    //         line-height: 26px;
-    //         font-family: 'Nunito-Bold';
-    //         font-size: 20px;
-    //         font-weight: bold;
-    //         color: #ffffff;
-    //         text-transform: capitalize;
-    //         border-radius: 4px !important;
-    //         padding: 12px !important;
-    //     }
-    // }
+
 }
