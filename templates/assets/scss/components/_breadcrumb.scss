@@ -1,5 +1,8 @@
 .breadcrumb-container{
     position: absolute;
+    @media(max-width: 475px){
+        display: none;
+    }
 }
 .breadcrumb{
     background-color: transparent;

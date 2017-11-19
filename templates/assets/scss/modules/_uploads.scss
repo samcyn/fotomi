@@ -31,7 +31,9 @@
     height: 390px;
     margin: 5px auto;
     overflow: hidden;
-   
+    @media(max-width: 425px){
+        height: auto;
+    }
 }
 
 .uploads__picture input[type="file"] {
