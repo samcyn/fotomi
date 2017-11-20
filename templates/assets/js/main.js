@@ -52,7 +52,10 @@ var app = {
        // _links =  $('a.pageload-link');
         $(document).on("click", 'a.pageload-link', function(e){
             e.preventDefault();
+            //close navbar 
+            $('html').toggleClass('nav-open'); 
             
+
             var $this = $(this),
             _checker = window.location.hash || '#landing_page';
             
