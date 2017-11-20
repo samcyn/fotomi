@@ -53,7 +53,7 @@ var app = {
         $(document).on("click", 'a.pageload-link', function(e){
             e.preventDefault();
             //close navbar 
-            $('html').toggleClass('nav-open'); 
+            $('html').removeClass('nav-open'); 
             
 
             var $this = $(this),
