@@ -3,6 +3,14 @@
   .container {
     max-width: 1176px !important;
   }
+  /* line 5, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_containers.scss */
+  .container--smaller {
+    max-width: 950px !important;
+  }
+  /* line 8, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_containers.scss */
+  .container--w754 {
+    max-width: 754px !important;
+  }
 }
 
 /* line 3, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_reset.scss */
@@ -26,8 +34,7 @@ input[type=tel],
 input[type=text],
 input[type=time],
 input[type=url], textarea.form-control,
-select.form-control
-input[type=date].input-alternate:focus,
+select.form-control input[type=date].input-alternate:focus,
 input[type=date].input-alternate:hover,
 input[type=datetime-local].input-alternate:focus,
 input[type=datetime-local].input-alternate:hover,
@@ -45,7 +52,7 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
 }
 
 /* line 41, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_reset.scss */
-label {
+label, .account .account__credits {
   line-height: 22px;
   font-family: 'Nunito-Regular';
   font-size: 16px;
@@ -68,34 +75,64 @@ input {
   list-style-type: none;
 }
 
-/* line 5, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 6, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+.bg-grey {
+  background-color: #F2F2F2 !important;
+}
+
+/* line 11, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+/* line 14, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .mt-52 {
   margin-top: 52px !important;
 }
 
-/* line 9, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 19, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .c-red {
   color: #FF5A5F !important;
 }
 
-/* line 13, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 23, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .c-blue {
   color: #6EC0D4 !important;
 }
 
-/* line 18, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 28, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .fw-600 {
   font-weight: 600 !important;
 }
 
-/* line 23, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 33, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .opacity_1 {
   opacity: 1 !important;
 }
 
-/* line 28, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 38, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .pos-rel {
   position: relative;
+}
+
+/* line 41, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+.pos-abs {
+  position: absolute;
+}
+
+/* line 46, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+.list-style-type-none {
+  list-style-type: none !important;
+}
+
+/* line 51, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+.pt-24 {
+  padding-top: 24px;
+}
+
+/* line 54, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+.pr-32 {
+  padding-right: 32px;
 }
 
 @font-face {
@@ -559,6 +596,172 @@ section.tabs .tab__form .btn {
   border-radius: 4px !important;
 }
 
+/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account {
+  padding: 78.5px 0 58px 0;
+}
+
+/* line 3, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account label, .account .account__credits {
+  line-height: 16px;
+  font-family: 'Nunito-SemiBold';
+  font-size: 18px;
+  font-weight: 600 !important;
+  color: #4F4F4F;
+}
+
+/* line 10, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .form-group {
+  margin-bottom: 10px;
+}
+
+/* line 13, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .btn--brand-outline {
+  line-height: 22.9px;
+  font-family: 'Nunito-Bold';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 19, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .card {
+  border: solid 1px #E0E0E0;
+  border-radius: 4px;
+  box-shadow: none !important;
+}
+
+/* line 24, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .card-body {
+  padding: 29px 24px;
+}
+
+/* line 27, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__big-heading {
+  line-height: 41px;
+  font-family: 'Nunito-SemiBold';
+  font-size: 32px;
+  font-weight: 600;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* line 36, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__heading {
+  line-height: 26px;
+  font-family: 'Nunito-SemiBold';
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 0;
+}
+
+/* line 44, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__hr {
+  margin-top: 8px;
+}
+
+/* line 47, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__input {
+  height: 30px !important;
+  border: 0 !important;
+  line-height: 21px;
+  font-family: 'Nunito-Regular';
+  font-size: 16px;
+  color: #828282;
+  padding-left: 4px;
+  max-width: 250px;
+  margin-left: 4px !important;
+}
+
+/* line 58, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__details {
+  margin-bottom: 50px !important;
+}
+
+/* line 61, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__wallet {
+  margin-bottom: 90px !important;
+}
+
+/* line 67, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__statement {
+  padding: 16px 16px 16px 24px;
+  background: #F2F2F2;
+  margin-bottom: 16px;
+}
+
+/* line 72, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__statementName {
+  line-height: 23px;
+  font-family: 'Nunito-Bold';
+  font-size: 18px;
+  font-weight: bold;
+  color: #4F4F4F;
+}
+
+/* line 79, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__statementDetail {
+  line-height: 21px;
+  font-family: 'Nunito-SemiBold';
+  font-size: 16px;
+  font-weight: 600;
+  color: #828282;
+}
+
+/* line 86, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__statementPrice {
+  line-height: 26px;
+  font-family: 'Nunito-SemiBold';
+  font-size: 20px;
+  font-weight: 600;
+  color: #4F4F4F;
+}
+
+/* line 93, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__month {
+  line-height: 26px;
+  font-family: 'Nunito-SemiBold';
+  font-size: 20px;
+  font-weight: 600;
+  color: #4F4F4F;
+  text-transform: uppercase;
+}
+
+/* line 101, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+.account .account__date {
+  display: block;
+  line-height: 31px;
+  font-family: 'Nunito-SemiBold';
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  text-align: right;
+}
+
+/* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_about_us.scss */
+.about_us {
+  padding: 78.5px 0 52px 0;
+}
+
+/* line 3, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_about_us.scss */
+.about_us .about_us__big-heading {
+  text-align: center;
+  line-height: 41px;
+  font-family: 'Nunito-SemiBold';
+  font-size: 32px;
+  font-weight: 600;
+  color: #4F4F4F;
+  margin-bottom: 24px;
+}
+
+/* line 12, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_about_us.scss */
+.about_us .about_us__passage {
+  font-family: 'Nunito-Regular';
+  font-size: 14px;
+  color: #4F4F4F;
+}
+
 /* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_modals.scss */
 .modal {
   background-color: #FFF;
@@ -605,7 +808,7 @@ section.tabs .tab__form .btn {
 }
 
 /* line 35, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_modals.scss */
-.modal__divider label {
+.modal__divider label, .modal__divider .account .account__credits, .account .modal__divider .account__credits {
   line-height: 21px;
   font-family: 'Nunito-SemiBold';
   font-size: 16px;
@@ -839,12 +1042,12 @@ section.tabs .tab__form .btn {
 }
 
 /* line 27, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
-.projects label.mask {
+.projects label.mask, .projects .account .mask.account__credits, .account .projects .mask.account__credits {
   opacity: 1 !important;
 }
 
 /* line 29, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_projects.scss */
-.projects label.mask .mask__input {
+.projects label.mask .mask__input, .projects .account .mask.account__credits .mask__input, .account .projects .mask.account__credits .mask__input {
   height: 24px;
   width: 24px;
   top: 16px;
@@ -1012,33 +1215,32 @@ section.tabs .tab__form .btn {
   right: 0;
 }
 
-/* line 9, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_main.scss */
+/* line 11, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_main.scss */
 main {
   padding-bottom: 88px;
 }
 
 /* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
 .footer {
-  position: absolute;
   width: 100%;
   bottom: 0;
 }
 
-/* line 7, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+/* line 6, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
 .footer__list {
   padding: 32px 0 !important;
   border-radius: 8px;
 }
 
 @media (max-width: 425px) {
-  /* line 7, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+  /* line 6, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
   .footer__list {
     flex-wrap: wrap-reverse;
     padding: 16px 0 !important;
   }
 }
 
-/* line 14, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+/* line 13, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
 .footer__list li:first-child {
   font-size: 14px;
   font-family: 'Nunito-Bold';
@@ -1047,7 +1249,7 @@ main {
 }
 
 @media (max-width: 425px) {
-  /* line 14, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+  /* line 13, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
   .footer__list li:first-child {
     flex: 0 0 100%;
     text-align: center;
@@ -1055,7 +1257,7 @@ main {
 }
 
 @media (max-width: 425px) {
-  /* line 24, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+  /* line 23, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
   .footer__list li:last-child {
     display: flex;
     flex: 0 0 100%;
@@ -1064,7 +1266,7 @@ main {
   }
 }
 
-/* line 31, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
+/* line 30, /home/jide/Documents/repos/fotomi/templates/assets/scss/layout/_footer.scss */
 .footer__list li:last-child a {
   line-height: 22px;
   font-family: 'Nunito-Bold';
@@ -1128,6 +1330,21 @@ main {
   font-size: 18px;
   font-weight: bold;
   padding: 10px 0 11px 0 !important;
+}
+
+/* line 47, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_buttons.scss */
+.btn--brand-outline {
+  background: transparent;
+  background-color: transparent;
+  box-shadow: none;
+  color: #6EC0D4 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* line 54, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_buttons.scss */
+.btn--brand-outline:hover {
+  box-shadow: none !important;
 }
 
 /* line 1, /home/jide/Documents/repos/fotomi/templates/assets/scss/components/_cards.scss */

@@ -44,3 +44,14 @@
     font-weight: bold;
     padding: 10px 0 11px 0 !important;
 }
+.btn--brand-outline{
+    background: transparent;
+    background-color: transparent;
+    box-shadow: none;
+    color: $brand_color_blue !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    &:hover{
+        box-shadow: none !important;
+    }
+}

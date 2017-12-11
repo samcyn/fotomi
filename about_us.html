@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fotomi</title>
+
+        <!-- Custom Modal -->
+        <link rel="stylesheet" href="assets/node_modules/custombox/dist/custombox.min.css">
+        
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="assets/node_modules/font-awesome/css/font-awesome.min.css">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/node_modules/mdbootstrap/css/bootstrap.min.css">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/node_modules/mdbootstrap/css/mdb.min.css">
+
+		<link rel="stylesheet" type="text/css" href="assets/css/components.css">
+
+		<!-- Main CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+		
+
+		<script src="assets/js/snap.svg-min.js"></script>
+	</head>
+	<body>
+
+		<div class="wrapper">
+            <!-- Header -->
+            <header>
+                <!--Navbar-->
+                <nav class="mb-1 navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand pageload-link" href="index.html">
+                            <img src="assets/img/logo/logo.svg"/>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link nav-link__red waves-effect waves-light pageload-link" href="#page_login" >Sign up <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link nav-link__blue waves-effect waves-light pageload-link" href="#page_login">Sign In </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- MAIN CONTENTS -->
+            <main class="pb-0">
+
+                <!-- About Us Page -->
+                <div>
+
+                    <!-- Welcome banner -->
+                    <section class="about_us">
+                        <div class="container">
+                            <h2 class="about_us__big-heading">About Us</h2>
+                            <p class="about_us__passage">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
+                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                        </div>
+                    </section>
+                        
+                </div>
+
+            </main>
+
+             <!-- FOOTER -->
+            <footer class="footer bg-grey pt-24">
+                <div class="container container--smaller">
+                    <div class="row justify-content-between">
+                        <div class="col col-md-4">
+                            <div>
+                                <h4>Get in Touch</h4>
+                                <p>Please fill the short form to get in touch</p>
+                                <!-- forms here -->
+                                <form method="" data-parsley-validate="">   
+                                    
+                                    
+                                    <div class="md-form">
+                                        <input type="text" class="input-alternate form-control" placeholder="Name" id="name" name="name" data-parsley-trigger="change" required="">
+                                    </div>
+                                   
+                                    <div class="md-form">
+                                        <input type="email" class="input-alternate form-control" placeholder="Email Address" id="email" name="email"  data-parsley-trigger="change" required="">
+                                    </div>
+                                    
+                                    <div class="md-form">
+                                        <textarea class="input-alternate md-textarea form-control" placeholder="Message" id="message" name="message" rows="5" data-parsley-trigger="change" required=""></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-brand btn-brand--primary">Create Project</button>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col col-md-3">
+                            <div>
+                                <div>
+                                    <p>Connect with us:</p>
+                                    <p>For support or any question</p>
+                                    <ul class="pl-0 list-style-type-none">
+                                        <li>Email us at: <a href="email:hello@univelcity.com">hello@univelcity.com</a></li>
+                                        <li>Call us on: <a href="tel:08033330000">08033330000</a></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p>Visit us at:</p>
+                                    <p>42, montgomery sabo yaba, Lagos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <ul class="d-flex justify-content-between none-list-style-type mb-0 footer__list">
+                        <li class="align-self-center">
+                            <span><span>&copy</span> 2017 Fotomi All Rights Reserved</span>
+                        </li>
+                        <li class="">
+                            <a href="#">About</a>
+                            <a href="#" class="ml-4 mr-4">Contact</a>
+                            <a href="#">Help</a>
+                        </li> 
+                    </ul>
+                </div>
+            </footer>
+
+            <div id="loader" class="pageload-overlay" data-opening="M 0,0 c 0,0 63.5,-16.5 80,0 16.5,16.5 0,60 0,60 L 0,60 Z">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+                    <path d="M 0,0 c 0,0 -16.5,43.5 0,60 16.5,16.5 80,0 80,0 L 0,60 Z"/>
+                </svg>
+            </div><!-- /pageload-overlay -->
+
+            <!-- MODAL BOX -->
+            <div class="modal text-center" id="upload_photo">
+                <p class="modal__heading">Please select the version of the project you are uploading and upload your zipped file</p>
+                <!-- MODAL FORM -->
+                <form method="" id="modal__form" class="modal__form" data-parsley-validate="">
+                    
+                    <div class="d-flex justify-content-around modal__divider">
+                        <label class="d-flex justify-content-between">
+                            <input type="radio" name="photos" value="correction" required="">Correction
+                        </label>
+                        <label class="d-flex">
+                            <input type="radio" name="photos" value="Final">Final
+                        </label>
+                    </div>
+                    <div class="modal__file-container">
+                        <input type="file" class="input-alternate form-control" id="file-upload" name="file-upload" accept="application/zip" data-parsley-pattern=".*\.zip$" required>
+                        <label for="file-upload" class="modal__file-label d-flex justify-content-between">
+                            <span id="file_name"></span> 
+                            <strong>Browse</strong>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-brand btn-brand--danger btn-brand--custom">Upload</button>
+                </form>
+            </div>
+           
+		</div>
+
+		
+		<script type="text/javascript" src="assets/node_modules/mdbootstrap/js/jquery-3.2.1.min.js"></script>
+
+		<script type="text/javascript" src="assets/node_modules/mdbootstrap/js/popper.min.js"></script>
+
+		<script type="text/javascript" src="assets/node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- Custom Modal -->
+        <script type="text/javascript" src="assets/node_modules/custombox/dist/custombox.min.js"></script>
+        <script type="text/javascript" src="assets/node_modules/custombox/dist/custombox.legacy.min.js"></script>
+       
+
+        <script src="assets/js/classie.js"></script>
+        <script src="assets/js/svgLoader.js"></script>
+        <script src="assets/node_modules/parsley/parsley.min.js"></script>
+        <!-- Main Js -->
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        
+        <script>
+            
+            $(document).ready(function(){
+                app.custombox();
+                app.onPageRefresh();
+                app.pageLinks();
+                app.login_form(); 
+                app.fileReaderCtrl();
+                app.sidebarController(); 
+            });
+        </script>
+		
+	</body>
+</html>

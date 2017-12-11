@@ -1,0 +1,110 @@
+.account{
+    padding: 78.5px 0 58px 0;
+    label{
+        line-height: 16px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 18px;
+        font-weight: 600 !important;
+        color: #4F4F4F;
+    }
+    .form-group{
+        margin-bottom: 10px;
+    }
+    .btn--brand-outline{
+        line-height: 22.9px;
+        font-family: 'Nunito-Bold';
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .card{
+        border: solid 1px #E0E0E0;
+        border-radius: 4px;
+        box-shadow: none !important;
+    }
+    .card-body{
+       padding: 29px 24px;
+    }
+    .account__big-heading{
+        line-height: 41px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 32px;
+        font-weight: 600;
+        color: #333333;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .account__heading{
+        line-height: 26px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 20px;
+        font-weight: 600;
+        color: #333333;
+        margin-bottom: 0;
+    }
+    .account__hr{
+        margin-top: 8px;
+    }
+    .account__input{
+        height: 30px !important;
+        border: 0 !important;
+        line-height: 21px;
+        font-family: 'Nunito-Regular';
+        font-size: 16px;
+        color: #828282;
+        padding-left: 4px;
+        max-width: 250px;
+        margin-left: 4px !important;
+    }
+    .account__details{
+        margin-bottom: 50px !important;
+    }
+    .account__wallet{
+        margin-bottom: 90px !important;
+    }
+    .account__credits{
+        @extend label;
+    }
+    .account__statement{
+        padding: 16px 16px 16px 24px;
+        background: $brand_color_grey;
+        margin-bottom: 16px;
+    }
+    .account__statementName{
+        line-height: 23px;
+        font-family: 'Nunito-Bold';
+        font-size: 18px;
+        font-weight: bold;
+        color: #4F4F4F;
+    }
+    .account__statementDetail{
+        line-height: 21px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 16px;
+        font-weight: 600;
+        color: #828282;
+    }
+    .account__statementPrice{
+        line-height: 26px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 20px;
+        font-weight: 600;
+        color: #4F4F4F;
+    }
+    .account__month{
+        line-height: 26px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 20px;
+        font-weight: 600;
+        color: #4F4F4F;
+        text-transform: uppercase;
+    }
+    .account__date{
+        display: block;
+        line-height: 31px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 24px;
+        font-weight: 600;
+        color: #333333;
+        text-align: right;
+    }
+}
