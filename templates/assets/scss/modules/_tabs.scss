@@ -52,7 +52,7 @@ section.tabs{
         }
     }
     .tab__buttons-group{
-        margin-bottom: 25px; 
+        margin-bottom: 31px; 
         .btn{
             width: 200px;
             margin-left: 0 !important;
@@ -78,9 +78,9 @@ section.tabs{
 
     .divider{
         text-align: center;
-        border-top: 1px solid #171717;
-        margin: 0 auto;
-        max-width: 372px;
+        border-top: 1px solid #BDBDBD;
+        margin: 0 auto 9px auto;
+        max-width: 387px;
         display: block;
     }
     .divider__word{
@@ -89,6 +89,10 @@ section.tabs{
         width: 40px;
         margin: 0 auto;
         background:$form_background;
+        font-family: 'Nunito-Bold';
+        font-size: 18px;
+        font-weight: 600;
+        color: #4F4F4F;
     }
     .tab__form{
         .rememberme{
