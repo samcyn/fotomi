@@ -290,6 +290,13 @@ var app = {
             }
         });
 
+    },
+    menuController:function(){
+        $('.rightSideBar .nav-link').on('click', function(){
+            $('.rightSideBar .menus').find('.active').removeClass('active');
+            $(this).parent().addClass('active');
+        })
+       
     }
     
 }

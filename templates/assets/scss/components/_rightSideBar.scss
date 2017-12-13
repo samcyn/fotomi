@@ -39,8 +39,13 @@
             display: block;
             padding: 15px;
         }
-        li{
+        .nav-item{
             border-bottom: 1px solid #F2F2F2;
+            &.active{
+                .nav-link{
+                    background-color: #E0E0E0;
+                }
+            }
             a{
                 font-size: 20px;
                 padding: $navlink_paddingTB 67px !important;
@@ -56,9 +61,9 @@
                 &.nav-link__blue{
                     color: $navlink_color_blue !important;
                 }
-                &.nav-link__active{
-                    background-color: #E0E0E0;
-                }
+                // &.nav-link__active{
+                //     background-color: #E0E0E0;
+                // }
             }
         }
         .btn--brand-outline{
