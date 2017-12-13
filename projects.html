@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Fotomi</title>
+
+        <!-- Custom Modal -->
+        <link rel="stylesheet" href="assets/node_modules/custombox/dist/custombox.min.css">
+        
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="assets/node_modules/font-awesome/css/font-awesome.min.css">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/node_modules/mdbootstrap/css/bootstrap.min.css">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/node_modules/mdbootstrap/css/mdb.min.css">
+
+		<link rel="stylesheet" type="text/css" href="assets/css/components.css">
+
+		<!-- Main CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+		
+
+		<script src="assets/js/snap.svg-min.js"></script>
+	</head>
+	<body>
+
+		<div class="wrapper">
+            <!-- Header -->
+            <header>
+                <!--Navbar-->
+                <nav class="mb-1 navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo/logo.svg"/>
+                        </a>
+                        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> -->
+                        <div class=" navbar-collapse d-flex justify-content-end">
+                            <ul class="navbar-nav d-flex flex-row">
+                                <li class="nav-item active">
+                                    <a class="nav-link nav-link__blue waves-effect waves-light" href="javascript:void(0);" >
+                                        <i class="fa fa-bell" aria-hidden="true"></i><span class="sr-only">(current)</span>
+                                        <span class="badge badge-danger nav-link__badge">2</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item sidebar-toggler">
+                                    <a class="nav-link waves-effect waves-light" href="javascript:void(0);">
+                                        <i class="fa fa-bars" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- MAIN CONTENTS -->
+            <main>
+               
+                <!-- Create project page -->
+                <div class="page_container" id="create_project">   
+                 
+                    <!-- PROJECTS -->
+                    <section class="projects">
+                        <div class="container">
+    
+                            <h4 class="projects__heading text-center">Create A Project</h4>
+                            <div class="pos-rel">
+                                <!-- forms here -->
+                                <form method="" class="projects__form" id="create_project_form" data-parsley-validate="">
+                                        
+                                    <label for="title">Title:</label>
+                                    <div class="md-form">
+                                        <input type="text" class="input-alternate form-control" id="title" name="title"  data-parsley-trigger="change" data-parsley-minlength="3" required="">
+                                    </div>
+                                    <label for="description">Description:</label>
+                                    <div class="md-form">
+                                        <textarea class="input-alternate md-textarea form-control" id="description" name="description" rows="5" data-parsley-trigger="change" required=""></textarea>
+                                    </div>
+                                    <label for="email">Customer Email Address:</label>
+                                    <div class="md-form">
+                                        <input type="email" class="input-alternate form-control" id="email" name="email" data-parsley-trigger="change" required="">
+                                    </div>
+                                    <label for="phone">Customer Phone Number:</label>
+                                    <div class="md-form">
+                                        <input type="text" class="input-alternate form-control" id="phone" name="phone" data-parsley-type="digits" data-parsley-trigger="change" data-parsley-minlength="11" required="">
+                                    </div>
+                                    <button type="submit" class="btn btn-brand btn-brand--danger btn-block btn-brand--custom-block">Create Project</button>
+                                    
+                                </form>
+                                <div class="projects__watermark projects__watermark-left">
+                                    <img src="assets/img/icons/watermark_left.png">
+                                </div>
+                                <div class="projects__watermark projects__watermark-right">
+                                    <img src="assets/img/icons/watermark_right.png">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                        
+                </div>
+
+                <!-- Upload Image Page -->
+                <div class="page_container" id="image_upload">
+                    
+                    <section class="uploads text-center">
+                        <div class="container pos-rel">
+                            <!-- breadcrumb -->
+                            <div class="breadcrumb-container">
+                                <nav aria-label="breadcrumb" role="navigation">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#create_project" class="pageload-link">Create Projects</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Adekunle</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <h4 class="uploads__heading">Upload Pictures</h4>
+                            <p class="uploads__subheading">07/11/2017</p>
+                            <p class="uploads__subheading mb-80">Only zip files can be uploaded</p>
+                            
+                            <div class="uploads__image-container">
+                                <div class="uploads__picture modal_btn" data-modal="upload_photo">
+                                     <img src="assets/img/icons/photo-camera.png" class="uploads__picture-src"/>
+                                     <!-- <input type="file" class="uploads__file-input"  accept="application/zip"> -->
+                                </div>
+                            </div>
+                           
+                           
+                            <!-- <button class="btn btn-brand btn-brand--danger btn-brand--custom" id="modal_upload">Upload</button> -->
+                            
+                        </div>        
+                    </section>
+                
+                </div>
+
+                <div class="page_container" id="account">
+                    <section class="account">
+                        <div class="container container--w754">
+                            <h2 class="account__big-heading">Account</h2>
+                            
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="account__details">
+                                        <h6 class="account__heading">Personal Details</h6>
+                                        <hr class="account__hr">
+                                        <form>
+                                            <div class="form-group d-flex">
+                                                <label for="name" class="col-form-label">Name:</label>
+                                                <input type="text" class="form-control account__input" id="name" placeholder="Name" readonly>
+                                            </div>
+                                            <div class="form-group d-flex">
+                                                <label for="email" class="col-form-label">Email:</label>
+                                                <input type="email" class="form-control account__input" id="email" placeholder="Adebayomayowa@gmail.com" readonly>
+                                            </div>
+                                            <div class="form-group d-flex">
+                                                <label for="password" class="col-form-label">Password:</label>
+                                                <input type="password" class="form-control account__input" id="password" value="password" readonly>
+                                            </div>
+                                            <div class="text-right mt-20">
+                                                <button class="btn btn--brand-outline">update</button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="account__wallet">
+                                        <h6 class="account__heading">Wallet</h6>
+                                        <hr class="account__hr">
+                                        
+                                        <div class="d-flex justify-content-between">
+                                            <span class="account__credits">2 Credits Available</span>
+                                            <button class="btn btn--brand-outline">
+                                                <i class="fa fa-plus" aria-hidden="true"></i> update
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="account__todos">
+                                        <h6 class="account__heading">Completed</h6>
+                                        <hr class="account__hr">
+                                        <ul class="pl-0 list-style-type-none">
+                                            <li class="account__statement">
+                                                <div class="row justify-content-between">
+                                                    <div class="col col-md-6">
+                                                        <div class="d-flex">
+                                                            <div class="text-center align-self-center pr-32">
+                                                                <h6 class="account__month mb-0">OCT</h6>
+                                                                <span class="account__date">20</span>
+                                                            </div>
+                                                            <div>
+                                                                <h4 class="account__statementName">Adebayo Mayowa</h4>
+                                                                <p class="account__statementDetail mb-0">Payment for 5 Credits</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col col-md-3">
+                                                        <div class="text-right">
+                                                            <p class="account__statementPrice">5,000</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="account__statement">
+                                                <div class="row justify-content-between">
+                                                    <div class="col col-md-6">
+                                                        <div class="d-flex">
+                                                            <div class="text-center align-self-center pr-32">
+                                                                <h6 class="account__month mb-0">AUG</h6>
+                                                                <span class="account__date">20</span>
+                                                            </div>
+                                                            <div>
+                                                                <h4 class="account__statementName">Adebayo Mayowa</h4>
+                                                                <p class="account__statementDetail mb-0">Payment for 5 Credits</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col col-md-3">
+                                                        <div class="text-right">
+                                                            <p class="account__statementPrice">5,000</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="account__statement">
+                                                <div class="row justify-content-between">
+                                                    <div class="col col-md-6">
+                                                        <div class="d-flex">
+                                                            <div class="text-center align-self-center pr-32">
+                                                                <h6 class="account__month mb-0">JUL</h6>
+                                                                <span class="account__date">20</span>
+                                                            </div>
+                                                            <div>
+                                                                <h4 class="account__statementName">Adebayo Mayowa</h4>
+                                                                <p class="account__statementDetail mb-0">Payment for 5 Credits</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col col-md-3">
+                                                        <div class="text-right">
+                                                            <p class="account__statementPrice">5,000</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="text-center">
+                                            <button class="btn btn--brand-outline">View More</button>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </section>
+                </div>
+
+                <!-- Projects -->
+                <div class="page_container" id="projects_1">
+                        
+                    <section class="projects text-center">
+                        <div class="container">
+                            <h4 class="projects__heading">Adekunle</h4>
+                            <p class="projects__subheading">07/11/2017</p>
+                            <div class="row justify-content-md-center">
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                            <button class="btn btn-brand btn-brand--danger btn-brand--custom">Correction</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                            <button class="btn btn-brand btn-brand--primary btn-brand--custom">Final</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </section>
+                
+                </div>
+
+                <div class="page_container show" id="projects_2">
+                        
+                    <section class="projects text-center">
+                        <div class="container">
+                            <!-- breadcrumb -->
+                            <div class="breadcrumb-container">
+                                <nav aria-label="breadcrumb" role="navigation">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Projects</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Adekunle</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <h4 class="projects__heading">Projects</h4>
+                           
+                            <div class="row justify-content-md-center mt-52">
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card card-plus">
+                                    
+                                        <!--Card image-->
+                                        <a class="view overlay hm-white-slight pageload-link" href="#create_project">
+                                            <div class="projects__img"></div>
+                                            <div class="mask opacity_1 d-flex justify-content-center align-items-center">
+                                                <div class="mask__plus ">
+                                                    <div class="mask__wrap">
+                                                        <div class="mask__circle d-flex justify-content-center align-items-center m-auto">
+                                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                                        </div>
+                                                        <p class="mask__text">Add Project</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </a>
+                                    
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#projects_6" class="pageload-link" >
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#projects_6" class="pageload-link" >
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#projects_6" class="pageload-link" >
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__name align-self-center">Adekunle</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </section>
+                
+                </div>
+
+                <div class="page_container" id="projects_3">
+                        
+                    <section class="projects text-center">
+                        <div class="container pos-rel">
+                            <!-- breadcrumb -->
+                            <div class="breadcrumb-container">
+                                <nav aria-label="breadcrumb" role="navigation">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#create_project" class="pageload-link">Create Projects</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Adekunle</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <h4 class="projects__heading">Project 1 Correction</h4>
+                            <p class="projects__subheading">07/11/2017</p>
+                            <div class="d-flex justify-content-center">
+                                <p class="projects__line pr-4">Link: <span>http//fotomi/adekunle/URL</span></p>
+                                <p class="projects__line pl-4">Access code: <span>002123</span></p>
+                            </div>
+                            <div>
+                                <p class="projects__paragraph">Send the link and the access code by clicking the send button below</p>
+                            </div>
+                            <div class="projects__subheading-button">
+                                <button class="btn btn-brand btn-brand--primary btn-brand--custom modal_btn" data-modal="upload_client">Send</button>
+                            </div>
+                        
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div>
+                                <button class="btn btn-brand btn-brand--danger btn-brand--custom">Confirm</button>
+                                <button class="btn btn-brand btn-brand--primary btn-brand--custom">Not Confirmed</button>
+                            </div> -->
+                        </div>        
+                    </section>
+                
+                </div>
+
+                <div class="page_container" id="projects_4">
+                        
+                    <section class="projects text-center">
+                        <div class="container">
+                            <h4 class="projects__heading">Adekunle Selected</h4>
+                            <p class="projects__subheading">07/11/2017</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="projects__line">Link: <span>http//fotomi/adekunle/URL</span></p>
+                                <p class="projects__line">Access code: <span>002123</span></p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="projects__form-footer">
+                                <form>
+                                    <div class="md-form">
+                                        <textarea class="input-alternate projects__textarea" id="message" name="message" placeholder="Reply"></textarea>
+                                    </div>
+                                    <button class="btn btn-brand btn-brand--primary btn-brand--custom">Reply</button>
+                                </form>
+                            </div>
+                        </div>        
+                    </section>
+                
+                </div>
+
+                <div class="page_container" id="projects_5">
+                    
+                    <section class="projects text-center">
+                        <div class="container">
+                            <h4 class="projects__heading">Adekunle Correction</h4>
+                            <p class="projects__subheading">07/11/2017</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="projects__line">Link: <span>http//fotomi/adekunle/URL</span></p>
+                                <p class="projects__line">Access code: <span>002123</span></p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="#">
+                                                <label class="mask">
+                                                    <input type="checkbox" class="mask__input"/>
+                                                </label>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-center">
+                                                <span class="projects__number align-self-center">0001</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>        
+                    </section>  
+            
+                </div>
+
+                <div class="page_container" id="projects_6">
+                    
+                    <section class="projects text-center">
+                        <div class="container">
+                             <!-- breadcrumb -->
+                            <div class="breadcrumb-container">
+                                <nav aria-label="breadcrumb" role="navigation">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#">Create Projects</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Adekunle</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <h4 class="projects__heading">Adekunle</h4>
+                            <div class="projects__subheading-button">
+                                <button class="btn btn-brand btn-brand--danger btn-brand--custom" id="modal_upload">Upload</button>
+                            </div>
+                            <div class="row">
+                                
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="javascript:void(0)" >
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__correction align-self-center">Correction</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="javascript:void(0)">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__correction align-self-center">Correction</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="javascript:void(0)">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__correction align-self-center">Correction</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3">
+                                    <!--Card-->
+                                    <div class="card">
+                                    
+                                        <!--Card image-->
+                                        <div class="view overlay hm-white-slight">
+                                            <img src="assets/img/faces/face.png" class="projects__img" alt="">
+                                            <a href="javascript:void(0)">
+                                                <div class="mask"></div>
+                                            </a>
+                                        </div>
+                                    
+                                        <!--Card content-->
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="projects__correction align-self-center">Correction</span>
+                                                <span class="projects__date align-self-center">12/12/2017</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>        
+                    </section>
+                
+                </div>
+
+            </main>
+
+             <!-- FOOTER -->
+            <footer class="footer pos-abs">
+                <div class="container">
+                    <ul class="d-flex justify-content-between none-list-style-type mb-0 footer__list">
+                        <li class="align-self-center">
+                            <span><span>&copy</span> 2017 Fotomi All Rights Reserved</span>
+                        </li>
+                        <li class="">
+                            <a href="about_us.html">About</a>
+                            <a href="#" class="ml-4 mr-4">Contact</a>
+                            <a href="#">Help</a>
+                        </li> 
+                    </ul>
+                </div>
+            </footer>
+
+            <div id="loader" class="pageload-overlay" data-opening="M 0,0 c 0,0 63.5,-16.5 80,0 16.5,16.5 0,60 0,60 L 0,60 Z">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+                    <path d="M 0,0 c 0,0 -16.5,43.5 0,60 16.5,16.5 80,0 80,0 L 0,60 Z"/>
+                </svg>
+            </div><!-- /pageload-overlay -->
+
+            <!-- MODAL BOX -->
+            <div class="modal text-center" id="upload_photo">
+                <p class="modal__heading">Please select the version of the project you are uploading and upload your zipped file</p>
+                <!-- MODAL FORM -->
+                <form method="" id="modal__form" class="modal__form" data-parsley-validate="">
+                    
+                    <div class="d-flex justify-content-around modal__divider">
+                        <label class="d-flex justify-content-between">
+                            <input type="radio" name="photos" value="correction" required="">Correction
+                        </label>
+                        <label class="d-flex">
+                            <input type="radio" name="photos" value="Final">Final
+                        </label>
+                    </div>
+                    <div class="modal__file-container">
+                        <input type="file" class="input-alternate form-control" id="file-upload" name="file-upload" accept="application/zip" data-parsley-pattern=".*\.zip$" required>
+                        <label for="file-upload" class="modal__file-label d-flex justify-content-between">
+                            <span id="file_name"></span> 
+                            <strong>Browse</strong>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-brand btn-brand--danger btn-brand--custom">Upload</button>
+                </form>
+            </div>
+
+            <div class="modal text-center" id="upload_client">
+                <p class="modal__heading">The Link and the Access code has been sent.</p>
+            </div>
+            
+        </div>
+        
+        <aside class="rightSideBar">
+            <div class="menus pr-67">
+                <p class="menus__heading">Adebayo Mayowa</p>
+                <p class="menus__paragraph">2 Creadits Available</p>
+                <button class="btn btn--brand-outline">
+                    <i class="fa fa-plus" aria-hidden="true"></i> Add Credit
+                </button>
+            </div>
+            <ul class="menus mt-32">
+                <li class="nav-item active">
+                    <a class="nav-link nav-link__active waves-effect waves-light pageload-link" href="#account">Account <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link waves-effect waves-light pageload-link" href="#projects_2">Project</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link  waves-effect waves-light pageload-link" href="#page_login">History</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link nav-link__blue waves-effect waves-light" href="index.html">Log Out</a>
+                </li>
+            </ul>
+        </aside>
+
+		
+		<script type="text/javascript" src="assets/node_modules/mdbootstrap/js/jquery-3.2.1.min.js"></script>
+
+		<script type="text/javascript" src="assets/node_modules/mdbootstrap/js/popper.min.js"></script>
+
+		<script type="text/javascript" src="assets/node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- Custom Modal -->
+        <script type="text/javascript" src="assets/node_modules/custombox/dist/custombox.min.js"></script>
+        <script type="text/javascript" src="assets/node_modules/custombox/dist/custombox.legacy.min.js"></script>
+       
+
+        <script src="assets/js/classie.js"></script>
+        <script src="assets/js/svgLoader.js"></script>
+        <script src="assets/node_modules/parsley/parsley.min.js"></script>
+        <!-- Main Js -->
+        <script type="text/javascript" src="assets/js/main.js"></script>
+        
+        <script>
+            
+            $(document).ready(function(){
+                app.custombox();
+                app.onPageRefresh();
+                app.pageLinks();
+                app.login_form(); 
+                app.fileReaderCtrl();
+                app.sideMenuController(); 
+            });
+        </script>
+		
+	</body>
+</html>
