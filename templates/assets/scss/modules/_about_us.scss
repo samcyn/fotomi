@@ -1,5 +1,5 @@
 .about_us{
-    padding: 78.5px 0 52px 0;
+    padding: 80px 0 52px 0;
     .about_us__big-heading{
         text-align: center;
         line-height: 41px;
@@ -10,6 +10,82 @@
         margin-bottom: 24px;
     }
     .about_us__passage{
+        font-family: 'Nunito-Regular';
+        font-size: 14px;
+        color: #4F4F4F;
+    }
+}
+
+.footer-about{
+    .input-alternate{
+        line-height: 21px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 16px !important;
+        font-weight: 600;
+        color: #828282;
+    }
+    textarea.md-textarea.input-alternate{
+        height: 70px !important;
+        &:focus{
+            height: 70px !important; 
+        }
+    }
+    .btn.btn-brand{
+        line-height: 26px;
+        font-family: 'Nunito-Bold';
+        font-size: 20px;
+        font-weight: bold;
+        color: #FFFFFF;
+        padding: 12px 32px;
+    }
+    form{
+        padding-bottom: 58px;
+    }
+    .footer-about__heading{
+        line-height: 31px;
+        font-family: 'Nunito-Medium';
+        font-size: 24px;
+        font-weight: 500;
+        color: #4F4F4F;
+        margin-bottom: 8px;
+    }
+    .footer-about__passage{
+        line-height: 21px;
+        font-family: 'Nunito-SemiBold';
+        font-size: 16px;
+        font-weight: 600;
+        color: #4F4F4F;
+        margin-bottom: 16px;
+    }
+}
+
+.footer-connect{
+    ul{
+        margin-bottom: 41px;
+    }
+    li{
+        line-height: 18px;
+        font-family: 'Nunito-Medium';
+        font-size: 14px;
+        font-weight: 500;
+        color: #4F4F4F;
+    }
+    .footer-connect__heading{
+        line-height: 23px;
+        font-family: 'Nunito-Bold';
+        font-size: 18px;
+        font-weight: bold;
+        color: #4F4F4F;
+    }
+    .footer-connect__paragraph{
+        line-height: 21px;
+        font-family: 'Nunito-Medium';
+        font-size: 16px;
+        font-weight: 500;
+        color: #4F4F4F;
+        margin-bottom: 8px;
+    }
+    .footer-connect__address{
         font-family: 'Nunito-Regular';
         font-size: 14px;
         color: #4F4F4F;

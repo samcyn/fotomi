@@ -1,7 +1,7 @@
 @import '.././components/_mask.scss';
 
 .projects{
-    padding: 60.7px 0 58px 0; 
+    padding: 89.5px 0 58px 0; 
     .card{
         box-shadow: none !important;
         background: transparent !important;
@@ -53,12 +53,12 @@
     font-size: 14px;
     font-weight: bold;
     color: #BDBDBD;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
 }
 
 .projects__subheading-button{
     margin-top: 15px;
-    margin-bottom: 42px;
+    margin-bottom: 52px;
 }
 
 .projects__line{
@@ -67,7 +67,7 @@
     font-size: 20px;
     font-weight: bold;
     color: #4F4F4F;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     span{
         line-height: 22px;
         font-family: 'Nunito-BoldItalic';
@@ -83,7 +83,13 @@
         font-size: 12px;
     }
 }
-
+.projects__paragraph{
+    line-height: 23px;
+    font-family: 'Nunito-Bold';
+    font-size: 18px;
+    font-weight: bold;
+    color: #828282;
+}
 .projects__img{
     width: 100%;
     height: 260px;

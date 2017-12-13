@@ -2,7 +2,12 @@
 	background-color: transparent;
 }
 // NAV BAR 1rem == 16px;
-
+.navbar-collapse {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -ms-flex-align: center;
+    align-items: center;
+}
 .navbar{
 	border-radius: 0;
 	box-shadow: none !important;
@@ -36,6 +41,9 @@
 		font-family: $navbar_font-family;
 		font-weight: $navlink_fontweight;
 		text-transform: capitalize;
+		i{
+			font-size: 30px;
+		}
 	}
 
 	.nav-link__red{
@@ -45,7 +53,17 @@
 	.nav-link__blue{
 		color: $navlink_color_blue !important;
 	}
-
+	.nav-link__badge{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		border-radius: 100%;
+		min-height: 22px;
+		min-width: 22px;
+		top: 5px;
+		right: 5px;
+	}
 	.nav-item{
 		position: relative;
 		&:last-child{

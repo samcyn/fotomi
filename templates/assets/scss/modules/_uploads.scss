@@ -1,5 +1,5 @@
 .uploads{
-    padding: 60.7px 0 52px 0;
+    padding: 89.5px 0 160px 0;
 }
 .uploads__heading{
     line-height: 41px;
@@ -7,7 +7,7 @@
     font-size: 32px;
     font-weight: bold;
     color: #333333;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .uploads__subheading{
@@ -16,7 +16,7 @@
     font-size: 18px;
     font-weight: bold;
     color: #828282;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
 /*styling of input/photo */
@@ -27,8 +27,8 @@
     margin-bottom: 34px;
 }
  .uploads__picture{
-    max-width: 450px;
-    height: 390px;
+    max-width: 200px;
+    height: 173.3px;
     margin: 5px auto;
     overflow: hidden;
     @media(max-width: 425px){
