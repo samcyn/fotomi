@@ -1,6 +1,4 @@
-.dropdown-toggle::after{
-	display: none !important;
-}
+@import '../components/_dropdown.scss';
 
 .navbar.navbar-light .navbar-nav .nav-item.active >.nav-link {
 	background-color: transparent;
