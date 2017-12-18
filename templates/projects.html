@@ -163,21 +163,21 @@
                                     <div class="account__details">
                                         <h6 class="account__heading">Personal Details</h6>
                                         <hr class="account__hr">
-                                        <form>
+                                        <form id="account_form">
                                             <div class="form-group d-flex">
                                                 <label for="name" class="col-form-label">Name:</label>
-                                                <input type="text" class="form-control account__input" id="name" placeholder="Name" readonly>
+                                                <input type="text" class="form-control account__input borderless" id="name" placeholder="Name" readonly>
                                             </div>
                                             <div class="form-group d-flex">
                                                 <label for="email" class="col-form-label">Email:</label>
-                                                <input type="email" class="form-control account__input" id="email" placeholder="Adebayomayowa@gmail.com" readonly>
+                                                <input type="email" class="form-control account__input borderless" id="email" placeholder="Adebayomayowa@gmail.com" readonly>
                                             </div>
                                             <div class="form-group d-flex">
                                                 <label for="password" class="col-form-label">Password:</label>
-                                                <input type="password" class="form-control account__input" id="password" value="password" readonly>
+                                                <input type="password" class="form-control account__input borderless" id="password" value="password" readonly>
                                             </div>
                                             <div class="text-right mt-20">
-                                                <button class="btn btn--brand-outline">update</button>
+                                                <a class="btn btn--brand-outline" href="javascript:void(0)" id="account_update">update</a>
                                             </div>
                                         </form>
                                     </div>
@@ -1464,6 +1464,7 @@
                 app.fileReaderCtrl();
                 app.sideMenuController(); 
                 app.menuController();
+                app. account_update();
             });
         </script>
 		

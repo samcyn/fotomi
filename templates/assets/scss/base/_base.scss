@@ -2,6 +2,11 @@
     list-style-type: none;
 }
 
+input.borderless{
+    border: 0 !important;
+    border-bottom: none !important;
+}
+
 //BACKGROUND
 .bg-grey{
     background-color: $brand_color_grey !important;
