@@ -297,6 +297,14 @@ var app = {
             $(this).parent().addClass('active');
         })
        
+    },
+    account_update: function(){
+        $("#account_update").on('click', function(){
+            this.tog = !this.tog;
+            var _inputs = $(this).parents('form').find('input');
+            $(this).text(this.tog ? 'Save' : 'Update');
+            _inputs.toggleClass('borderless').attr('readonly', this.tog ? false : true);
+        });
     }
     
 }

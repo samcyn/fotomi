@@ -52,6 +52,17 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
 }
 
 /* line 41, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_reset.scss */
+input[type=date].input-alternate:focus,
+input[type=date].input-alternate:hover,
+input[type=datetime-local].input-alternate:focus,
+input[type=datetime-local].input-alternate:hover,
+input[type=email].input-alternate:focus, input[type=email].input-alternate:hover,
+input[type=number].input-alternate:focus, input[type=number].input-alternate:hover, input[type=password].input-alternate:focus, input[type=password].input-alternate:hover, input[type=search-md].input-alternate:focus, input[type=search-md].input-alternate:hover, input[type=search].input-alternate:focus, input[type=search].input-alternate:hover, input[type=tel].input-alternate:focus, input[type=tel].input-alternate:hover, input[type=text].input-alternate:focus, input[type=text].input-alternate:hover, input[type=time].input-alternate:focus, input[type=time].input-alternate:hover, input[type=url].input-alternate:focus, input[type=url].input-alternate:hover,
+textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate:hover {
+  border-color: #80BDFF !important;
+}
+
+/* line 56, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_reset.scss */
 label, .account .account__credits {
   line-height: 22px;
   font-family: 'Nunito-Regular';
@@ -60,12 +71,12 @@ label, .account .account__credits {
   color: #4f4f4f;
 }
 
-/* line 48, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_reset.scss */
+/* line 63, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_reset.scss */
 input {
   margin: 0 !important;
 }
 
-/* line 51, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_reset.scss */
+/* line 66, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_reset.scss */
 .md-form {
   margin-bottom: 16px;
 }
@@ -75,97 +86,103 @@ input {
   list-style-type: none;
 }
 
-/* line 6, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 5, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+input.borderless {
+  border: 0 !important;
+  border-bottom: none !important;
+}
+
+/* line 11, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .bg-grey {
   background-color: #F2F2F2 !important;
 }
 
-/* line 11, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 16, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .mt-20 {
   margin-top: 20px !important;
 }
 
-/* line 14, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 19, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .mt-32 {
   margin-top: 32px !important;
 }
 
-/* line 17, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 22, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .mt-35 {
   margin-top: 35px !important;
 }
 
-/* line 21, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 26, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .mb-95 {
   margin-bottom: 95px !important;
 }
 
-/* line 24, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 29, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .mt-52 {
   margin-top: 52px !important;
 }
 
-/* line 27, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 32, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .mb-80 {
   margin-bottom: 80px !important;
 }
 
-/* line 32, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 37, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .c-red {
   color: #FF5A5F !important;
 }
 
-/* line 36, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 41, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .c-blue {
   color: #6EC0D4 !important;
 }
 
-/* line 41, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 46, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .fw-600 {
   font-weight: 600 !important;
 }
 
-/* line 46, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 51, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .opacity_1 {
   opacity: 1 !important;
 }
 
-/* line 51, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 56, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .pos-rel {
   position: relative;
 }
 
-/* line 54, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 59, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .pos-abs {
   position: absolute;
 }
 
-/* line 59, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 64, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .list-style-type-none {
   list-style-type: none !important;
 }
 
-/* line 64, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 69, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .pt-24 {
   padding-top: 24px;
 }
 
-/* line 67, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 72, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .pr-32 {
   padding-right: 32px;
 }
 
-/* line 70, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 75, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .pr-67 {
   padding-right: 67px;
 }
 
-/* line 74, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 79, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .pt-6 {
   padding-top: 6px;
 }
 
-/* line 78, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
+/* line 83, /home/jide/Documents/repos/fotomi/templates/assets/scss/base/_base.scss */
 .pb-6 {
   padding-bottom: 6px;
 }
@@ -834,7 +851,6 @@ section.tabs .tab__form .btn {
 /* line 42, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
 .account .account__input {
   height: 30px !important;
-  border: 0 !important;
   line-height: 21px;
   font-family: 'Nunito-Regular';
   font-size: 16px;
@@ -844,24 +860,24 @@ section.tabs .tab__form .btn {
   margin-left: 4px !important;
 }
 
-/* line 53, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+/* line 52, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
 .account .account__details {
   margin-bottom: 50px !important;
 }
 
-/* line 56, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+/* line 55, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
 .account .account__wallet {
   margin-bottom: 90px !important;
 }
 
-/* line 62, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+/* line 61, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
 .account .account__statement {
   padding: 16px 16px 16px 24px;
   background: #F2F2F2;
   margin-bottom: 16px;
 }
 
-/* line 67, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+/* line 66, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
 .account .account__statementName {
   line-height: 23px;
   font-family: 'Nunito-Bold';
@@ -870,7 +886,7 @@ section.tabs .tab__form .btn {
   color: #4F4F4F;
 }
 
-/* line 74, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+/* line 73, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
 .account .account__statementDetail {
   line-height: 21px;
   font-family: 'Nunito-SemiBold';
@@ -879,7 +895,7 @@ section.tabs .tab__form .btn {
   color: #828282;
 }
 
-/* line 81, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+/* line 80, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
 .account .account__statementPrice {
   line-height: 26px;
   font-family: 'Nunito-SemiBold';
@@ -888,7 +904,7 @@ section.tabs .tab__form .btn {
   color: #4F4F4F;
 }
 
-/* line 88, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+/* line 87, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
 .account .account__month {
   line-height: 26px;
   font-family: 'Nunito-SemiBold';
@@ -898,7 +914,7 @@ section.tabs .tab__form .btn {
   text-transform: uppercase;
 }
 
-/* line 96, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
+/* line 95, /home/jide/Documents/repos/fotomi/templates/assets/scss/modules/_account.scss */
 .account .account__date {
   display: block;
   line-height: 31px;

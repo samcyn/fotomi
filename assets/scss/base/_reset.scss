@@ -38,6 +38,21 @@ textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate
     border-bottom:solid 1px #E0E0E0 !important;
 }
 
+input[type=date].input-alternate:focus, 
+input[type=date].input-alternate:hover, 
+input[type=datetime-local].input-alternate:focus, 
+input[type=datetime-local].input-alternate:hover, 
+input[type=email].input-alternate:focus, input[type=email].input-alternate:hover,
+ input[type=number].input-alternate:focus, input[type=number].input-alternate:hover, input[type=password].input-alternate:focus, input[type=password].input-alternate:hover, input[type=search-md].input-alternate:focus, input[type=search-md].input-alternate:hover, input[type=search].input-alternate:focus, input[type=search].input-alternate:hover, input[type=tel].input-alternate:focus, input[type=tel].input-alternate:hover, input[type=text].input-alternate:focus, input[type=text].input-alternate:hover, input[type=time].input-alternate:focus, input[type=time].input-alternate:hover, input[type=url].input-alternate:focus, input[type=url].input-alternate:hover, 
+textarea.md-textarea.input-alternate:focus, textarea.md-textarea.input-alternate:hover{
+    border-color: #80BDFF !important;
+}
+
+// .form-control:focus {
+//     border-color: #80bdff;
+//     border-bottom: #80bdff !important;
+// }
+
 label{
     line-height: 22px;
     font-family: 'Nunito-Regular';
